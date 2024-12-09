@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+:root {
+    --baseColor: #eaeef1;
+    --mainColor: #0f487a;
+    --navBaseColor: #071a2b;
+    --navButtonColor1: #ededed;
+    --navButtonColor2: #4469a8;
+    --navButtonColor3: #a6cbfe;
+    --textColor1: #272829;
+    --textColor2: #e2eeff;
+    --textColor3: #50adff;
+    --accentColor: #ed9405;
+    --titleColor1: #f5f3f3;
+    --titleColor2: #ed9405;
+    --titleColor3: #272829;
+    --titleColor4: #eff4fa;
+}
+
+.isDark {
+    --baseColor: #1c1d20;
+    --navBaseColor: #071a2b;
+    --navButtonColor1: #2b426a;
+    --navButtonColor2: #e2eeff;
+    --textColor1: #d7e2f2;
+    --textColor2: #272829;
+    --textColor3: #50adff;
+    --accentColor: #ed9405;
+    --titleColor1: #f5f3f3;
+    --titleColor2: #ed9405;
+    --titleColor3: #d5e3f6;
+    --titleColor4: #131518;
+}

@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+    transition: all 0.25s ease-in-out;
+}
+
+:where(body) {
+    font-family: "kaisotai";
+    background-color: var(--baseColor);
+}
+
+.en {
+    font-family: alternate-gothic-condensed-a;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+.scroll-animation_scale {
+    transform-origin: center;
+    transform-style: preserve-3d;
+    animation: scaleAnimation linear forwards;
+    animation-timeline: scroll();
+}
+@keyframes scaleAnimation {
+    30% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    70% {
+        transform: scale(10);
+        opacity: 0;
+        perspective: 800px;
+    }
+    100% {
+        transform: scale(10);
+        opacity: 0;
+        visibility: hidden;
+    }
+  }
