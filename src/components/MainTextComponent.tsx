@@ -1,9 +1,10 @@
 import React from "react";
+import { baseColorManager } from "../baseColorManager";
 
 type MainTextProps = {
     text: Array<{
         character: string;
-        accent: boolean;
+        accent?: boolean;
         break: boolean;
     }>;
     baseColor: string | undefined;
@@ -21,5 +22,5 @@ export default function MainTextComponent({ text, baseColor }: MainTextProps) {
             </span>{textItem.break && <br />}
         </>
     ));
-    return <p className={`text-[70px] leading-[1em] tracking-[-0.07em] ${baseColor}`}>{itemElement}</p>;
+    return <p className={`text-[70px] leading-[1em] tracking-[-0.07em] ${baseColorManager(baseColor)}`}>{itemElement}</p>;
 }

@@ -3,6 +3,15 @@ import Header from "./templates/Header";
 import SectionHero from "./sections/SectionHero";
 import SectionHello from "./sections/SectionHello";
 import SectionAbout from "./sections/SectionAbout";
+import SectionJob from "./sections/SectionJob";
+import SectionCourse from "./sections/SectionCourse";
+import VisualBreak from "./sections/VisualBreak";
+import SectionApply from "./sections/SectionApply";
+import SectionAcceptance from "./sections/SectionAcceptance";
+import SectionAddress from "./sections/SectionAddress";
+import SectionContact from "./sections/SectionContact";
+import SectionBenefit from "./sections/SectionBenefit";
+import Footer from "./templates/Footer";
 
 export default function App() {
     return (
@@ -12,6 +21,26 @@ export default function App() {
             <div className="main-contents bg-baseColor">
                 <SectionHello />
                 <SectionAbout />
+                <SectionJob />
+                <SectionCourse />
+                <VisualBreak />
+                <SectionApply />
+                <SectionAcceptance />
+                <SectionAddress />
+                <div 
+                    className="
+                        flex
+                        inner
+                    "
+                    style={{
+                        "paddingRight": "0",
+                        "paddingLeft": "0",
+                    }}
+                >
+                    <SectionContact />
+                    <SectionBenefit />
+                </div>
+                <Footer />
             </div>
         </>
     );
