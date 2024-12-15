@@ -1,0 +1,88 @@
+import React from "react";
+import TitleComponent from "../components/TitleComponent";
+import MainTextComponent from "../components/MainTextComponent";
+import SubTextComponent from "../components/SubTextComponent";
+
+export default function SectionAddress() {
+    const textBaseColor = "w-b";
+    const subTextData = [
+        { character: "〒060-0001", break: true },
+        { character: "北海道札幌市中央区 南9条西3丁目", break: true },
+        { character: "2-10 札幌K.Sビル 6F", break: false },
+    ];
+    const mainTextData = [{ character: "営業月曜 月曜〜金曜", break: false }];
+
+    return (
+        <section
+            className="
+                relative
+                z-[0]
+                pt-[50vh]
+                pb-[100px]
+                mt-[-50px]
+                overflow-y-clip
+            "
+        >
+            <div
+                className="
+                    absolute
+                    scroll-animation_bg
+                    top-0
+                    left-0
+                    z-[1]
+                    bg-mainColor
+                    w-full
+                    h-full
+                "
+            ></div>
+            <div className="inner relative z-[10]">
+                <TitleComponent
+                    EnglishText={"ADDRESS"}
+                    JapaneseText={"住所"}
+                    color={textBaseColor}
+                />
+                <div
+                    className="
+                        flex
+                        justify-center
+                        items-center
+                        gap-x-[100px]
+                    "
+                >
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.63696260811!2d141.35333286547825!3d43.049069329146604!2m3!
+                                    1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a27ee23ea55%3A0xdedc877edeaf642!2z5YyX6Zai5p2x5a2m6Zmi!5e0!3m2!1sja!2sjp!4v1665207063239!5m2!1sja!2sjp"
+                        width="500"
+                        height="500"
+                        style={{ border: 0 }}
+                        loading="lazy"
+                    ></iframe>
+                    <div className="">
+                        <h3
+                            className="
+                            block
+                            mb-[30px]
+                        "
+                        >
+                            <SubTextComponent
+                                text={subTextData}
+                                baseColor={textBaseColor}
+                            />
+                        </h3>
+                        <h2
+                            className="
+                            block
+                            mb-[30px]
+                        "
+                        >
+                            <MainTextComponent
+                                text={mainTextData}
+                                baseColor={textBaseColor}
+                            />
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}

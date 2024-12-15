@@ -5,6 +5,9 @@ module.exports = {
             colors: {
                 baseColor: "var(--baseColor)",
                 mainColor: "var(--mainColor)",
+                bgColor1: "var(--bgColor1)",
+                bgColor2: "var(--bgColor2)",
+                bgColorFooter: "var(--bgColorFooter)",
                 navBaseColor: "var(--navBaseColor)",
                 navButtonColor1: "var(--navButtonColor1)",
                 navButtonColor2: "var(--navButtonColor2)",
@@ -19,6 +22,10 @@ module.exports = {
                 titleColor4: "var(--titleColor4)",
                 isDark: {
                     baseColor: "var(--baseColor)",
+                    mainColor: "var(--mainColor)",
+                    bgColor1: "var(--bgColor1)",
+                    bgColor2: "var(--bgColor2)",
+                    bgColorFooter: "var(--bgColorFooter)",
                     navBaseColor: "var(--navBaseColor)",
                     navButtonColor1: "var(--navButtonColor1)",
                     navButtonColor2: "var(--navButtonColor2)",
