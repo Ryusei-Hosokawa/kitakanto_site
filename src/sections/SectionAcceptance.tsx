@@ -10,7 +10,7 @@ export default function SectionAcceptance() {
         { character: "コース", accent: true, break: false },
     ];
     return (
-        <section className="pt-[150vh]">
+        <section className="pt-[100vh]">
             <TitleComponent
                 EnglishText={"ACCEPTANCE"}
                 JapaneseText={"受付情報"}

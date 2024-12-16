@@ -4,9 +4,9 @@ import TitleComponent from "../components/TitleComponent";
 import MainTextComponent from "../components/MainTextComponent";
 import SubTextComponent from "../components/SubTextComponent";
 import ReadMoreButtonComponent from "../components/ReadMoreButtonComponent";
+import { useScrollTrigger } from "../hooks/useScrollTrigger";
 
 export default function SectionCourse() {
-    const textBaseColor = "text-[#eaeef1]";
     const mainTextData = [
         { character: "”なりたい”に応じて", accent: false, break: true },
         { character: "選べる3つ", accent: true, break: false },
@@ -17,13 +17,22 @@ export default function SectionCourse() {
         { character: "身に付けられるコースを 選べます。", break: true },
         { character: "あなたの興味が 向く職業は 何ですか？", break: false },
     ];
+    const { ref: ref1, inView: inView1 } = useScrollTrigger({
+        threshold: 0.45,
+
+    });
+    const { ref: ref2, inView: inView2 } = useScrollTrigger({
+        threshold: 0.4,
+
+    });
+    const textBaseColor = inView2 ? "text-[#eaeef1]" : "text-[#272829]";
 
     return (
         <section
-            className="
-                pt-[150vh]
-                bg-mainColor
-                "
+            className={`
+                pt-[100vh]
+                ${inView1 ? "bg-mainColor" : "bg-baseColor"}
+                `}
         >
             <div
                 className="
@@ -39,11 +48,16 @@ export default function SectionCourse() {
                     before:bg-[#d4dde9]
                 "
             >
-                <TitleComponent
-                    EnglishText="COURSE"
-                    JapaneseText="コースの種類"
-                    color={textBaseColor}
-                />
+                <h2 ref={(node) => {
+                    ref1(node);
+                    ref2(node);
+                }}>
+                    <TitleComponent
+                        EnglishText="COURSE"
+                        JapaneseText="コースの種類"
+                        color={textBaseColor}
+                    />
+                </h2>
                 <div
                     className="
                         flex
@@ -59,7 +73,10 @@ export default function SectionCourse() {
                             pt-[200px]
                         "
                     >
-                        <ImageComponent imageName={"lesson_time"} />
+                        <ImageComponent
+                            imageName={"lesson_time"}
+                            classText={"overflow-hidden rounded-[30px]"}
+                        />
                     </div>
                     <div className="">
                         <div className="mb-[50px]">
@@ -68,7 +85,7 @@ export default function SectionCourse() {
                                 baseColor={textBaseColor}
                             />
                         </div>
-                        <div 
+                        <div
                             className="
                                 mb-[30px]
                             "
@@ -78,7 +95,7 @@ export default function SectionCourse() {
                                 baseColor={textBaseColor}
                             />
                         </div>
-                        <div 
+                        <div
                             className="
                                 flex
                                 justify-end
@@ -86,7 +103,7 @@ export default function SectionCourse() {
                                 w-full
                             "
                         >
-                            <ReadMoreButtonComponent url={"#"}/>
+                            <ReadMoreButtonComponent url={"http://www.kitakanto-gakuin.net/"} />
                         </div>
                     </div>
                 </div>

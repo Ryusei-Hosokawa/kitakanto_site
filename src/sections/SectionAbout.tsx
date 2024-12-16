@@ -20,10 +20,11 @@ export default function SectionAbout() {
             accent: true,
             break: true,
         },
-        { 
-            character: "コースがあります", 
-            accent: false, 
-            break: true },
+        {
+            character: "コースがあります",
+            accent: false,
+            break: true,
+        },
         {
             character: "就職に関してお悩みの方 興味があった職種に 就きたい方",
             accent: false,
@@ -35,7 +36,7 @@ export default function SectionAbout() {
             break: false,
         },
     ];
-
+    
     return (
         <section className="pt-[500px] overflow-clip">
             <div className="inner">
@@ -44,7 +45,7 @@ export default function SectionAbout() {
                     JapaneseText={"北関東学院は"}
                     color={textBaseColor}
                 />
-                <div className="mb-[30px]">
+                <div className={`mb-[30px]`}>
                     <MainTextComponent
                         text={mainTextData}
                         baseColor={textBaseColor}
@@ -65,12 +66,23 @@ export default function SectionAbout() {
                         before:w-[150vw]
                         before:h-[100vh]
                         before:bg-mainColor
-                        before:translate-x-[-10%]
+                        before:translate-x-[-30%]
                     "
                 >
-                    <ImageComponent imageName={"lesson_desk"} />
+                    <ImageComponent
+                        imageName={"lesson_desk"}
+                        classText={"overflow-hidden rounded-[20px]"}
+                    />
                 </div>
-                <div className="relative z-[100] grid place-items-end pr-[30px]">
+                <div
+                    className={`
+                        relative 
+                        z-[100] 
+                        grid 
+                        place-items-end 
+                        pr-[30px]
+                    `}
+                >
                     <SubTextComponent
                         text={subTextData}
                         baseColor={baseColorManager("text-[#e2eeff]")}

@@ -19,7 +19,7 @@ export default function VisualBreak() {
     return (
         <section
             className="
-            pt-[150vh]
+            pt-[100vh]
         "
         >
             <div className="">
@@ -37,12 +37,11 @@ export default function VisualBreak() {
                             className="
                                 w-full
                                 max-w-[513px]
-                                mb-[50px]
                                 transition-all
                                 duration-[250s]
                                 ease-in-out
                             ">
-                            <ImageComponent imageName={"corridor"} />
+                            <ImageComponent imageName={"corridor"} classText={"overflow-hidden rounded-[30px]"} />
                         </div>
                     </div>
                     <div className="">
@@ -53,7 +52,7 @@ export default function VisualBreak() {
                     </div>
                 </div>
             </div>
-            <div className="bg-mainColor">
+            <div className="bg-mainColor pb-[150px]">
                 <div className="inner">
                     <div
                         className="
@@ -78,7 +77,7 @@ export default function VisualBreak() {
                                 w-full
                                 max-w-[513px]
                             ">
-                            <ImageComponent imageName={"book"} />
+                            <ImageComponent imageName={"book"} classText={"overflow-hidden rounded-[30px]"} />
                         </div>
                     </div>
                 </div>

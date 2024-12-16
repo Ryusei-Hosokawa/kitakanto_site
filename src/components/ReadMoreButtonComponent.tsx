@@ -1,4 +1,5 @@
 import React from "react";
+import { useScrollTrigger } from "../hooks/useScrollTrigger";
 
 type ReadMoreButtonData = {
     url: string;
@@ -7,8 +8,10 @@ type ReadMoreButtonData = {
 
 export default function ReadMoreButtonContent({
     url,
-    characters = [ "ReadMore", "詳しく見る" ],
+    characters = ["ReadMore", "詳しく見る"],
 }: ReadMoreButtonData) {
+    const { ref, inView } = useScrollTrigger({ threshold: 0.2 });
+
     const textBaseColor = "text-textColor3";
     const textData = characters;
 
@@ -16,16 +19,23 @@ export default function ReadMoreButtonContent({
         return (
             <span
                 key={index}
+                ref={ref}
                 className={`
                     block
                     text-center
                     font-[500]
                     group-hover:text-accentColor
                     transition-all
-                    duration-[250s]
+                    delay-[150ms]
+                    duration-[400ms]
                     ease-in-out
                     leading-[1.2em]
                     ${textBaseColor}
+                    ${
+                        inView
+                            ? "opacity-1 translate-y-[0]"
+                            : "opacity-0 translate-y-[20px]"
+                    }
                     ${
                         index % 2 === 0
                             ? "text-[24px] border-b-[1px] border-textColor3 group-hover:border-accentColor"
@@ -46,7 +56,7 @@ export default function ReadMoreButtonContent({
             w-full
             max-w-[180px]
             relative
-            z-[999]
+            z-[99]
             transition-all
             duration-[250s]
             before:absolute

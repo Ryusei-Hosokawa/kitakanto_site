@@ -27,9 +27,10 @@ export default function CourseContents() {
                     relative
                     w-[min(28vw,300px)]
                     h-[min(28vw,300px)]
-                    overflow-hidden
                     group
-                "
+                    overflow-hidden
+                    rounded-[30px]
+                    "
             >
                 <div
                     className="
@@ -43,11 +44,12 @@ export default function CourseContents() {
                         w-full
                         h-full
                         brightness-50
+                        group-hover:scale-[1.2]
+                        duration-[250ms]
                 "
                 >
                     <ImageComponent 
                         imageName={data.image} 
-                        classText={"group-hover:scale-[110] transition-all duration-[250s] ease-in-out"}
                     />
                 </div>
                 <div 
@@ -60,10 +62,11 @@ export default function CourseContents() {
                         translate-y-[-50%]
                         w-full
                         text-[#e5e7eb]
+                        group-hover:text-accentColor
                         text-[40px]
                     "
                 >
-                    {data.title}<br /><span>コース</span>
+                    {data.title}<br />コース
                 </div>
             </button>
         );

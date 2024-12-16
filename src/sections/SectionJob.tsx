@@ -4,9 +4,9 @@ import TitleComponent from "../components/TitleComponent";
 import MainTextComponent from "../components/MainTextComponent";
 import SubTextComponent from "../components/SubTextComponent";
 import ReadMoreButtonContent from "../components/ReadMoreButtonComponent";
+import { useScrollTrigger } from "../hooks/useScrollTrigger";
 
 export default function SectionJob() {
-    const textBaseColor = "b-w";
     const mainTextData = [
         { character: "システムエンジニア", accent: false, break: false },
         { character: "WEBデザイナー", accent: false, break: true },
@@ -20,9 +20,25 @@ export default function SectionJob() {
         { character: "業務に就くことが 出来るようになれます", break: true },
         { character: "あなたも目指しませんか？", break: false },
     ];
+    const { ref: ref1, inView: inView1 } = useScrollTrigger({
+        threshold: 0.2,
+        triggerOnce: false,
+    });
+    const { ref: ref2, inView: inView2 } = useScrollTrigger({
+        threshold: 0.2,
+        triggerOnce: false,
+    });
+    const textBaseColor = inView2 ? "b-w" : "w-b";
 
     return (
-        <section className="pt-[150vh] scroll-animation_change-color">
+        <section
+            className={`
+                pt-[100vh]
+                pb-[150px]
+                scroll-animation_change-color
+                ${inView1 ? " " : "bg-mainColor"}
+            `}
+        >
             <TitleComponent
                 EnglishText="JOB"
                 JapaneseText="目指せる職業"
@@ -30,16 +46,24 @@ export default function SectionJob() {
             />
             <div className="flex gap-x-[130px] w-full max-w-[1114px] mx-auto">
                 <div>
-                    <div className="mb-[80px]">
-                        <MainTextComponent
-                            text={mainTextData}
-                            baseColor={textBaseColor}
-                        />
+                    <div
+                        ref={(node) => {
+                            ref1(node);
+                            ref2(node);
+                        }}
+                        className="mb-[80px]"
+                    >
+                        <div className={`mb-[30px]`}>
+                            <MainTextComponent
+                                text={mainTextData}
+                                baseColor={textBaseColor}
+                            />
+                        </div>
                     </div>
-                    <div 
-                        className="
+                    <div
+                        className={`
                             mb-[30px]
-                        "
+                        `}
                     >
                         <SubTextComponent
                             text={subTextData}
@@ -54,7 +78,7 @@ export default function SectionJob() {
                             align-center
                         "
                     >
-                        <ReadMoreButtonContent url={"#"}/>
+                        <ReadMoreButtonContent url={"http://www.kitakanto-gakuin.net/"} />
                     </div>
                 </div>
                 <div
@@ -63,7 +87,10 @@ export default function SectionJob() {
                     max-w-[523px]
                 "
                 >
-                    <ImageComponent imageName={"w_pc"} />
+                    <ImageComponent
+                        imageName={"w_pc"}
+                        classText={"overflow-hidden rounded-[30px]"}
+                    />
                 </div>
             </div>
         </section>
