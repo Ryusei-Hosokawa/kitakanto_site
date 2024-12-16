@@ -8,31 +8,48 @@ export default function NavList({
 }) {
     const listItem = listsData.map((listData, index: number) => {
         return (
-            <li key={index} className="font-[alternate-gothic-condensed-a] text-[85px]">
+            <li
+                key={index}
+                className="
+                    grid
+                    place-items-center
+                    font-[alternate-gothic-condensed-a]
+                    text-[85px]
+                "
+            >
                 <a
                     href={`#${listData.id}`}
                     className={`
+                        group
                         block
                         leading-[1em]
-                        w-[fit-content]
+                        w-fit
+                        h-[1em]
                         font-[700]
                         text-mainColor
-                        hover:opacity-[0.25]
                         transition-all
                         duration-[0.25s]
                         ease-in-out 
-                        [text-shadow:1px_1px_0_#FFF,-1px_-1px_0_#FFF,-1px_1px_0_#FFF,1px_-1px_0_#FFF,0px_1px_0_#FFF,_0_-1px_0_#FFF,-1px_0_0_#FFF,1px_0_0_#FFF]
+                        overflow-y-clip
                     `}
                 >
-                    {listData.title}
+                    {Array.from({ length: 2 }, (_, index) => (
+                        <span
+                            key={index}
+                            className={`
+                                block
+                                group-hover:translate-y-[-100%]
+                                ${
+                                    index === 1 ?
+                                    "text-accentColor" :
+                                     "[text-shadow:1px_1px_0_#FFF,-1px_-1px_0_#FFF,-1px_1px_0_#FFF,1px_-1px_0_#FFF,0px_1px_0_#FFF,_0_-1px_0_#FFF,-1px_0_0_#FFF,1px_0_0_#FFF]"
+                                }
+                            `}
+                        >
+                            {listData.title}
+                        </span>
+                    ))}
                 </a>
-                <div className="hidden ">
-                    <div className="flex opacity-0 pointer-events-none font-[#fff] mix-blend-overlay" aria-hidden="true">
-                        {Array.from({ length: 4 }, (_, index) => (
-                            <span key={index} className="font-[700] text-[150px]">{listData.title}</span>
-                        ))}
-                    </div>
-                </div>
             </li>
         );
     });

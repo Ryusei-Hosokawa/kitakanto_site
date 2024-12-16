@@ -7,7 +7,7 @@ export default function SectionHello() {
     ];
     
     return (
-        <section className="h-[500dvh] bg-baseColor overflow-x-clip">
+        <section className="h-[430dvh] bg-baseColor overflow-x-clip">
             <div className="inner sticky top-0 left-0 grid place-items-center h-[100dvh]">
                 <h2 className="en scroll-animation_scale font-[700] text-titleColor3 text-center">
                     {titleText.map((textItem, index: number) => {

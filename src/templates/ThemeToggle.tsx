@@ -24,6 +24,7 @@ export default function ThemeToggle() {
                 duration-[0.25s]
                 ease-in-out
                 bg-baseColor
+                hover:scale-[1.1]
                 ${theme ? "border-[#d0d1d1]" : "border-[#525558]"}
             `}
             onClick={handleThemeClick}

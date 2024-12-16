@@ -2,6 +2,9 @@ import React from "react";
 import TitleComponent from "../components/TitleComponent";
 import MainTextComponent from "../components/MainTextComponent";
 import SubTextComponent from "../components/SubTextComponent";
+import { baseColorManager } from "../baseColorManager";
+import { useScrollTrigger } from "../hooks/useScrollTrigger";
+
 
 export default function SectionAddress() {
     const textBaseColor = "w-b";
@@ -11,6 +14,7 @@ export default function SectionAddress() {
         { character: "2-10 札幌K.Sビル 6F", break: false },
     ];
     const mainTextData = [{ character: "営業月曜 月曜〜金曜", break: false }];
+    const { ref, inView } = useScrollTrigger({ threshold: 0.2 });
 
     return (
         <section
@@ -42,12 +46,16 @@ export default function SectionAddress() {
                     color={textBaseColor}
                 />
                 <div
-                    className="
+                    ref={ref}
+                    className={`
                         flex
                         justify-center
                         items-center
                         gap-x-[100px]
-                    "
+                        delay-[150ms]
+                        duration-[400ms]
+                        ${inView ? "opacity-1 scale-[1]" : "opacity-0 scale-[0.6]"}
+                    `}
                 >
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.63696260811!2d141.35333286547825!3d43.049069329146604!2m3!
@@ -56,6 +64,7 @@ export default function SectionAddress() {
                         height="500"
                         style={{ border: 0 }}
                         loading="lazy"
+                        className="overflow-hidden rounded-[20px]"
                     ></iframe>
                     <div className="">
                         <h3
@@ -72,7 +81,8 @@ export default function SectionAddress() {
                         <h2
                             className="
                             block
-                            mb-[30px]
+                            ml-[-10px]
+                            mb-[20px]
                         "
                         >
                             <MainTextComponent
@@ -80,6 +90,7 @@ export default function SectionAddress() {
                                 baseColor={textBaseColor}
                             />
                         </h2>
+                        <p className={`text-[60px] leading-[1em] ${baseColorManager(textBaseColor)}`}>9:00〜18:00</p>
                     </div>
                 </div>
             </div>

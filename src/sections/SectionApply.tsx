@@ -48,7 +48,7 @@ export default function SectionApply() {
     return (
         <div
             className="
-            pt-[150vh]
+            pt-[100vh]
         "
         >
             <div className="inner">
@@ -79,7 +79,7 @@ export default function SectionApply() {
                         mb-[50px]
                     "
                 >
-                    <ImageComponent imageName={"study"} />
+                    <ImageComponent imageName={"study"} classText={"overflow-hidden rounded-[30px_0px_0px_30px]"} />
                 </div>
                 <MainTextComponent
                     text={mainTextData2}
