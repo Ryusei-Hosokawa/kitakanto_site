@@ -5,7 +5,6 @@ import SubTextComponent from "../components/SubTextComponent";
 import { baseColorManager } from "../baseColorManager";
 import { useScrollTrigger } from "../hooks/useScrollTrigger";
 
-
 export default function SectionAddress() {
     const textBaseColor = "w-b";
     const subTextData = [
@@ -51,20 +50,33 @@ export default function SectionAddress() {
                         flex
                         justify-center
                         items-center
+                        md:sm:flex-row
+                        flex-col-reverse
                         gap-x-[100px]
+                        md:sm:gap-y-[0]
+                        gap-y-[30px]
                         delay-[150ms]
                         duration-[400ms]
-                        ${inView ? "opacity-1 scale-[1]" : "opacity-0 scale-[0.6]"}
+                        ${
+                            inView
+                                ? "opacity-1 scale-[1]"
+                                : "opacity-0 scale-[0.6]"
+                        }
                     `}
                 >
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.63696260811!2d141.35333286547825!3d43.049069329146604!2m3!
                                     1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a27ee23ea55%3A0xdedc877edeaf642!2z5YyX6Zai5p2x5a2m6Zmi!5e0!3m2!1sja!2sjp!4v1665207063239!5m2!1sja!2sjp"
-                        width="500"
-                        height="500"
                         style={{ border: 0 }}
                         loading="lazy"
-                        className="overflow-hidden rounded-[20px]"
+                        className="
+                                overflow-hidden
+                                rounded-[20px]
+                                w-full
+                                max-w-[500px]
+                                md:sm:h-[max(500px,45vh)]
+                                h-[25vh]
+                            "
                     ></iframe>
                     <div className="">
                         <h3
@@ -90,7 +102,13 @@ export default function SectionAddress() {
                                 baseColor={textBaseColor}
                             />
                         </h2>
-                        <p className={`text-[60px] leading-[1em] ${baseColorManager(textBaseColor)}`}>9:00〜18:00</p>
+                        <p
+                            className={`text-[60px] leading-[1em] ${baseColorManager(
+                                textBaseColor
+                            )}`}
+                        >
+                            9:00〜18:00
+                        </p>
                     </div>
                 </div>
             </div>

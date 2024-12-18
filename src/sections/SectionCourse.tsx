@@ -30,22 +30,17 @@ export default function SectionCourse() {
     return (
         <section
             className={`
-                pt-[100vh]
+                md:sm:pt-[100vh]
+                pt-[30vh]
                 ${inView1 ? "bg-mainColor" : "bg-baseColor"}
                 `}
         >
             <div
                 className="
                     inner
-                    pb-[300px]
+                    md:sm:pb-[300px]
+                    pb-[150px]
                     relative 
-                    before:absolute
-                    before:bottom-0
-                    before:left-[50%]
-                    before:translate-x-[-50%]
-                    before:w-full
-                    before:h-[2px]
-                    before:bg-[#d4dde9]
                 "
             >
                 <h2 ref={(node) => {
@@ -61,6 +56,8 @@ export default function SectionCourse() {
                 <div
                     className="
                         flex
+                        md:sm:flex-row-reverse
+                        flex-col-reverse
                         gap-x-[70px]
                         w-full
                     "
@@ -70,7 +67,8 @@ export default function SectionCourse() {
                             w-full 
                             max-w-[718px]
                             ml-[-20px]
-                            pt-[200px]
+                            md:sm:pt-[200px]
+                            pt-[70px]
                         "
                     >
                         <ImageComponent
@@ -79,7 +77,12 @@ export default function SectionCourse() {
                         />
                     </div>
                     <div className="">
-                        <div className="mb-[50px]">
+                        <div
+                            className="mb-[50px]
+                                md:sm:text-left
+                                text-center
+                            "
+                        >
                             <MainTextComponent
                                 text={mainTextData}
                                 baseColor={textBaseColor}
@@ -88,6 +91,8 @@ export default function SectionCourse() {
                         <div
                             className="
                                 mb-[30px]
+                                md:sm:text-left
+                                text-center
                             "
                         >
                             <SubTextComponent

@@ -10,9 +10,10 @@ export default function SectionContact() {
             character: "説明会の予約 や その他",
             break: true,
         },
-        { 
-            character: "お問合せを", 
-            break: true },
+        {
+            character: "お問合せを",
+            break: true,
+        },
         {
             character: "承っておりますので",
             break: true,
@@ -23,30 +24,52 @@ export default function SectionContact() {
         },
     ];
     return (
-        <section 
+        <section
             className="
-                pt-[100px]
-                w-[50%]
-                h-[min(50vw,650px)]
-                bg-bgColor1
+                relative
+                md:sm:pt-[100px]
+                pt-[30vw]
+                md:sm:pb-[0]
+                pb-[25vw]
+                md:sm:w-[50%]
+                w-full
+                md:sm:h-[min(50vw,650px)]
+                before:w-[100vw]
+                before:h-full
+                before:bg-bgColor1
+                before:absolute
+                before:z-[0]
+                before:top-0
+                before:right-0
             "
         >
-            <TitleComponent
-                EnglishText={"CONTRACT"}
-                JapaneseText={"連絡"}
-                color={textBaseColor}
-                marginBottom={"mb-[50px]"}
-            />
+            <h2 className="relative z-[1]">
+                <TitleComponent
+                    EnglishText={"CONTRACT"}
+                    JapaneseText={"連絡"}
+                    color={textBaseColor}
+                    marginBottom={"mb-[50px]"}
+                />
+            </h2>
             <div className="w-fit mx-auto mb-[30px]">
                 <SubTextComponent
                     text={subTextData}
                     baseColor={baseColorManager(textBaseColor)}
                 />
             </div>
-            <p className={`block text-center leading-[1em] text-[68px] ${baseColorManager(textBaseColor)}`}>
+            <p
+                className={`
+                    relative
+                    z-[1]
+                    block
+                    text-center
+                    leading-[1em]
+                    text-[68px] 
+                    ${baseColorManager(textBaseColor)}
+                `}
+            >
                 011−232−5508
             </p>
         </section>
     );
 }
-

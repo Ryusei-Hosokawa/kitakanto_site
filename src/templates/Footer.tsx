@@ -7,7 +7,8 @@ export default function Footer() {
         <footer
             className="
                 w-full
-                pt-[200px]
+                md:sm:pt-[200px]
+                pt-[30vw]
                 pb-[100px]
                 bg-baseColor
             "

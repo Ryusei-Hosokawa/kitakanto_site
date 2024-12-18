@@ -36,18 +36,16 @@ export default function SectionHero() {
                 z-[-100]
                 w-[100wv]
                 h-[100dvh]
-                py-[100px]
-                pl-[130px]
-                pr-[50px]
+                
                 bg-mainColor
+
             "
         >
             <div className="w-full px-[20px] mx-auto grid place-items-center">
                 <h1
                     className="
                         en
-                        text-[19vw]
-
+                        text-[24vw]
                         font-[700]
                     "
                 >

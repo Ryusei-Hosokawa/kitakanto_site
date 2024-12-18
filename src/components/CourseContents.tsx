@@ -25,14 +25,17 @@ export default function CourseContents() {
                 key={index}
                 className="
                     relative
-                    w-[min(28vw,300px)]
-                    h-[min(28vw,300px)]
+                    md:sm:w-[min(28vw,300px)]
+                    md:sm:h-[min(28vw,300px)]
+                    w-full
+                    h-[min(50vw,335px)]
                     group
                     overflow-hidden
                     rounded-[30px]
-                    "
+                "
             >
-                <div
+                <a
+                    href={data.ulr}
                     className="
                         absolute
                         top-[50%]
@@ -43,7 +46,7 @@ export default function CourseContents() {
                         translate-y-[-50%]
                         w-full
                         h-full
-                        brightness-50
+                        brightness-[0.7]
                         group-hover:scale-[1.2]
                         duration-[250ms]
                 "
@@ -51,7 +54,7 @@ export default function CourseContents() {
                     <ImageComponent 
                         imageName={data.image} 
                     />
-                </div>
+                </a>
                 <div 
                     className="
                         absolute
@@ -63,7 +66,8 @@ export default function CourseContents() {
                         w-full
                         text-[#e5e7eb]
                         group-hover:text-accentColor
-                        text-[40px]
+                        md:sm:text-[40px]
+                        text-[12vw]
                     "
                 >
                     {data.title}<br />コース
