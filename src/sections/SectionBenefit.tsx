@@ -29,21 +29,39 @@ export default function SectionContact() {
     return (
         <section 
             className="
+                relative
                 flex
                 flex-col
                 align-center
-                pt-[100px]
-                w-[50%]
-                h-[min(50vw,650px)]
-                bg-bgColor2
+                md:sm:pt-[100px]
+                pt-[30vw]
+                md:sm:pb-[0]
+                pb-[25vw]
+                md:sm:w-[50%]
+                w-full
+                md:sm:h-[min(50vw,650px)]
+                before:w-[100vw]
+                before:h-full
+                before:bg-bgColor2
+                before:absolute
+                before:z-[0]
+                before:top-0
+                before:left-0
             "
         >
-            <TitleComponent
-                EnglishText={"BENEFIT"}
-                JapaneseText={"給付金"}
-                color={textBaseColor}
-                marginBottom={"mb-[50px]"}
-            />
+            <h2
+                className="
+                    relative
+                    z-[1]
+                "
+            >
+                <TitleComponent
+                    EnglishText={"BENEFIT"}
+                    JapaneseText={"給付金"}
+                    color={textBaseColor}
+                    marginBottom={"mb-[50px]"}
+                />
+            </h2>
             <div className="w-fit mx-auto mb-[30px]">
                 <SubTextComponent
                     text={subTextData}
@@ -53,4 +71,3 @@ export default function SectionContact() {
         </section>
     );
 }
-

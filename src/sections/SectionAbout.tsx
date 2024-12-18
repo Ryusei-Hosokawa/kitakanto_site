@@ -38,14 +38,20 @@ export default function SectionAbout() {
     ];
     
     return (
-        <section className="pt-[500px] overflow-clip">
+        <section className="pt-[500px] pb-[50px] overflow-clip">
             <div className="inner">
                 <TitleComponent
                     EnglishText={"ABOUT"}
                     JapaneseText={"北関東学院は"}
                     color={textBaseColor}
                 />
-                <div className={`mb-[30px]`}>
+                <div
+                    className={`
+                        mb-[30px]
+                        md:sm:text-left
+                        text-center
+                    `}
+                >
                     <MainTextComponent
                         text={mainTextData}
                         baseColor={textBaseColor}
@@ -58,7 +64,8 @@ export default function SectionAbout() {
                         w-full
                         max-w-[920px]
                         ml-[-20px]
-                        mb-[60px]
+                        md:sm:mb-[60px]
+                        mb-[50px]
                         before:absolute
                         before:top-[130px]
                         before:left-0
@@ -80,7 +87,12 @@ export default function SectionAbout() {
                         z-[100] 
                         grid 
                         place-items-end 
-                        pr-[30px]
+                        md:sm:pr-[30px]
+                        md:sm:w-full
+                        mx-auto
+                        w-[80%]
+                        md:sm:text-left
+                        text-center
                     `}
                 >
                     <SubTextComponent

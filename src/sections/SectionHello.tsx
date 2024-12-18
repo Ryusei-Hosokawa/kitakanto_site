@@ -18,8 +18,8 @@ export default function SectionHello() {
                                     block
                                     ${
                                         textItem.text === "Hello,"
-                                            ? "leading-[1em] text-[350px]"
-                                            : "leading-[0.8em] text-[300px]"
+                                            ? "leading-[1em] md:sm:text-[350px] text-[26vw]"
+                                            : "leading-[0.8em] md:sm:text-[300px] text-[22vw]"
                                     }`}
                             >
                                 {textItem.text}

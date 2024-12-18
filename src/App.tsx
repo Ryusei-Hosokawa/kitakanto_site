@@ -18,7 +18,7 @@ export default function App() {
         <>
             <Header />
             <SectionHero />
-            <div className="main-contents bg-baseColor">
+            <div className="main-contents bg-baseColor overflow-clip">
                 <SectionHello />
                 <SectionAbout />
                 <SectionJob />
@@ -29,12 +29,12 @@ export default function App() {
                 <SectionAddress />
                 <div 
                     className="
-                        flex
+                        md:sm:flex
                         inner
                     "
-                    style={{
-                        "paddingRight": "0",
-                        "paddingLeft": "0",
+                    style={{ 
+                        paddingLeft: "0px", 
+                        paddingRight: "0px"
                     }}
                 >
                     <SectionContact />

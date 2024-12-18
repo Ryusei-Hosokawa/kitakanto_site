@@ -9,9 +9,10 @@ type MainTextProps = {
         break: boolean;
     }>;
     baseColor: string | undefined;
+    textSize?: string;
 };
 
-export default function MainTextComponent({ text, baseColor }: MainTextProps) {
+export default function MainTextComponent({ text, baseColor, textSize = "md:sm:text-[70px] text-[13vw]" }: MainTextProps) {
     const { ref, inView } = useScrollTrigger({ threshold: 0.2 });
     const itemElement = text.map((textItem, index: number) => (
         <>
@@ -22,7 +23,7 @@ export default function MainTextComponent({ text, baseColor }: MainTextProps) {
                     inline-block 
                     delay-[150ms]
                     duration-[400ms]
-                    ${textItem.accent && "text-accentColor"}
+                    ${ textItem.accent && "text-accentColor" }
                     ${
                         inView
                             ? "opacity-100 translate-x-[0]"
@@ -35,9 +36,10 @@ export default function MainTextComponent({ text, baseColor }: MainTextProps) {
             {textItem.break && <br />}
         </>
     ));
+
     return (
         <p
-            className={`text-[70px] leading-[1em] tracking-[-0.07em] ${baseColorManager(
+            className={`${textSize} leading-[1em] tracking-[-0.07em] ${baseColorManager(
                 baseColor
             )}`}
         >

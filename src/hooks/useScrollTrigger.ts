@@ -1,15 +1,21 @@
 import { useInView } from 'react-intersection-observer';
 
 type ScrollTriggerProps = {
+    root?: Element | null;
+    rootMargin?: string;
     threshold?: number;
     triggerOnce?: boolean;
 };
 
 export function useScrollTrigger({
+    root = null,
+    rootMargin = "0px 0px",
     threshold = 0.1,
     triggerOnce = true,
 }: ScrollTriggerProps) {
     const { ref, inView } = useInView({
+        root,
+        rootMargin,
         threshold,
         triggerOnce,
     });

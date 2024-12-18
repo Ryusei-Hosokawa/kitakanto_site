@@ -21,76 +21,107 @@ export default function SectionJob() {
         { character: "あなたも目指しませんか？", break: false },
     ];
     const { ref: ref1, inView: inView1 } = useScrollTrigger({
-        threshold: 0.2,
-        triggerOnce: false,
+        threshold: 0.15,
     });
     const { ref: ref2, inView: inView2 } = useScrollTrigger({
         threshold: 0.2,
-        triggerOnce: false,
     });
     const textBaseColor = inView2 ? "b-w" : "w-b";
 
     return (
         <section
             className={`
-                pt-[100vh]
+                md:sm:pt-[100vh]
+                pt-[50vw]
                 pb-[150px]
                 scroll-animation_change-color
                 ${inView1 ? " " : "bg-mainColor"}
             `}
         >
-            <TitleComponent
-                EnglishText="JOB"
-                JapaneseText="目指せる職業"
-                color={textBaseColor}
-            />
-            <div className="flex gap-x-[130px] w-full max-w-[1114px] mx-auto">
-                <div>
-                    <div
-                        ref={(node) => {
-                            ref1(node);
-                            ref2(node);
-                        }}
-                        className="mb-[80px]"
+            <div className="inner">
+                <h2>
+                    <TitleComponent
+                        EnglishText="JOB"
+                        JapaneseText="目指せる職業"
+                        color={textBaseColor}
+                    />
+                </h2>
+                <div
+                    className="
+                        flex
+                        md:sm:flex-row
+                        flex-col
+                        gap-x-[130px]
+                        w-full
+                        max-w-[1114px]
+                        mx-auto
+                    "
+                >
+                    <div 
+                        className="
+                            md:sm:mb-0
+                            mb-[60px]
+                        "
                     >
-                        <div className={`mb-[30px]`}>
-                            <MainTextComponent
-                                text={mainTextData}
+                        <div
+                            ref={(node) => {
+                                ref1(node);
+                                ref2(node);
+                            }}
+                            className="
+                                md:sm:mb-[80px]
+                                mb-[40px]
+                            "
+                        >
+                            <div
+                                className={`
+                                    md:sm:mb-[30px]
+                                    md:sm:text-left
+                                    text-center
+                                `}
+                            >
+                                <MainTextComponent
+                                    text={mainTextData}
+                                    baseColor={textBaseColor}
+                                />
+                            </div>
+                        </div>
+                        <div
+                            className={`
+                                mb-[30px]
+                                md:sm:text-left
+                                text-center
+                            `}
+                        >
+                            <SubTextComponent
+                                text={subTextData}
                                 baseColor={textBaseColor}
                             />
                         </div>
-                    </div>
-                    <div
-                        className={`
-                            mb-[30px]
-                        `}
-                    >
-                        <SubTextComponent
-                            text={subTextData}
-                            baseColor={textBaseColor}
-                        />
-                    </div>
-                    <div
-                        className="
+                        <div
+                            className="
                             w-full
                             flex
                             justify-end
                             align-center
                         "
-                    >
-                        <ReadMoreButtonContent url={"http://www.kitakanto-gakuin.net/"} />
+                        >
+                            <ReadMoreButtonContent
+                                url={"http://www.kitakanto-gakuin.net/"}
+                            />
+                        </div>
                     </div>
-                </div>
-                <div
-                    className="
+                    <div
+                        className="
                     w-full 
                     max-w-[523px]
                 "
-                >
-                    <ImageComponent
-                        imageName={"w_pc"}
-                        classText={"overflow-hidden rounded-[30px]"}
-                    />
+                    >
+                        <ImageComponent
+                            imageName={"w_pc"}
+                            classText={"overflow-hidden rounded-[30px]"}
+                        />
+                    </div>
                 </div>
             </div>
         </section>

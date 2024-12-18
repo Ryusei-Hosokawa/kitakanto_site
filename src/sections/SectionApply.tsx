@@ -3,9 +3,9 @@ import ImageComponent from "../components/ImageComponent";
 import TitleComponent from "../components/TitleComponent";
 import MainTextComponent from "../components/MainTextComponent";
 import SubTextComponent from "../components/SubTextComponent";
+import { useScrollTrigger } from "../hooks/useScrollTrigger";
 
 export default function SectionApply() {
-    const textBaseColor = "b-w";
     const mainTextData1 = [
         { character: "訓練を受けたいと思ったら", accent: false, break: true },
         { character: "選考会", accent: true, break: false },
@@ -34,6 +34,14 @@ export default function SectionApply() {
         ],
     ];
 
+    const { ref: ref1, inView: inView1 } = useScrollTrigger({
+        threshold: 0.45,
+    });
+    const { ref: ref2, inView: inView2 } = useScrollTrigger({
+        threshold: 0.4,
+    });
+    const textBaseColor = inView2 ? "b-w" : "w-b";
+
     const subTextComponents = subTextData.map((data, index: number) => {
         return (
             <div className="mb-[10px]">
@@ -46,26 +54,36 @@ export default function SectionApply() {
         );
     });
     return (
-        <div
-            className="
-            pt-[100vh]
-        "
+        <section
+            className={`
+                md:sm:pt-[100vh]
+                pt-[30vh]
+                ${inView1 ? "bg-baseColor" : "bg-mainColor"}
+            `}
         >
             <div className="inner">
-                <TitleComponent
-                    EnglishText={"APPLY"}
-                    JapaneseText={"申し込み手順"}
-                    color={textBaseColor}
-                />
-                <div className="mb-[30px] ml-[-5px]">
+                <h2 
+                    ref = {(node) => {
+                        ref1(node);
+                        ref2(node);
+                    }}
+                >
+                    <TitleComponent
+                        EnglishText={"APPLY"}
+                        JapaneseText={"申し込み手順"}
+                        color={textBaseColor}
+                    />
+                </h2>
+                <p className="block mb-[30px] md:sm:ml-[-5px] md:sm:text-left text-center md:sm:w-full w-[95%] mx-auto">
                     <MainTextComponent
                         text={mainTextData1}
                         baseColor={textBaseColor}
                     />
-                </div>
+                </p>
                 <div
                     className="
-                        mb-[180px]
+                        md:sm:mb-[180px]
+                        mb-[100px]
                     "
                 >
                     {subTextComponents}
@@ -76,16 +94,22 @@ export default function SectionApply() {
                         max-w-[1000px]
                         ml-auto
                         mr-[-20px]
-                        mb-[50px]
+                        md:sm:mb-[50px]
+                        mb-[30px]
                     "
                 >
-                    <ImageComponent imageName={"study"} classText={"overflow-hidden rounded-[30px_0px_0px_30px]"} />
+                    <ImageComponent
+                        imageName={"study"}
+                        classText={
+                            "overflow-hidden rounded-[30px_0px_0px_30px]"
+                        }
+                    />
                 </div>
                 <MainTextComponent
                     text={mainTextData2}
                     baseColor={textBaseColor}
                 />
             </div>
-        </div>
+        </section>
     );
 }

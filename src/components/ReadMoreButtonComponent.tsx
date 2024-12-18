@@ -24,7 +24,7 @@ export default function ReadMoreButtonContent({
                     block
                     text-center
                     font-[500]
-                    group-hover:text-accentColor
+                    md:sm:group-hover:text-accentColor
                     transition-all
                     delay-[150ms]
                     duration-[400ms]
@@ -38,8 +38,8 @@ export default function ReadMoreButtonContent({
                     }
                     ${
                         index % 2 === 0
-                            ? "text-[24px] border-b-[1px] border-textColor3 group-hover:border-accentColor"
-                            : "text-[20px]"
+                            ? "md:sm:text-[24px] text-[21px] border-b-[1px] border-textColor3 group-hover:md:sm:border-accentColor"
+                            : "md:sm:text-[20px] text-[18px]"
                     }
                 `}
             >
@@ -54,11 +54,10 @@ export default function ReadMoreButtonContent({
             group
             block
             w-full
-            max-w-[180px]
+            md:sm:max-w-[180px]
+            max-w-[120px]
             relative
             z-[99]
-            transition-all
-            duration-[250s]
             before:absolute
             before:top-[50%]
             before:left-0
@@ -66,7 +65,7 @@ export default function ReadMoreButtonContent({
             before:w-full
             before:h-2px
             before:bg-textColor3
-            group-hover:before:bg-accentColor
+            group-hover:before:md:sm:bg-accentColor
         "
         >
             <a
