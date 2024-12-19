@@ -33,7 +33,7 @@ export default function SubTextComponent({ text, baseColor }: SubTextProps) {
         </>
     ));
     return (
-        <p className={`md:sm:text-[30px] text-[6vw] ${baseColorManager(baseColor)}`}>
+        <p className={`md:lg:text-[30px] md:sm:text-[2.7vw] text-[6vw] ${baseColorManager(baseColor)}`}>
             {itemElement}
         </p>
     );

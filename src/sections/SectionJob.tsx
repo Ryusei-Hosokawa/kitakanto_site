@@ -30,6 +30,7 @@ export default function SectionJob() {
 
     return (
         <section
+            id="JOB"
             className={`
                 md:sm:pt-[100vh]
                 pt-[50vw]

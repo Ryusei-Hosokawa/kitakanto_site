@@ -44,7 +44,7 @@ export default function SectionApply() {
 
     const subTextComponents = subTextData.map((data, index: number) => {
         return (
-            <div className="mb-[10px]">
+            <div className="md:sm:mb-[10px] mb-[2vw] md:sm:text-left text-center md:sm:leading-[1.8em] leading-[2.8em]">
                 <SubTextComponent
                     key={index}
                     text={data}
@@ -55,9 +55,12 @@ export default function SectionApply() {
     });
     return (
         <section
+            id="APPLY"
             className={`
                 md:sm:pt-[100vh]
-                pt-[30vh]
+                pt-[30vw]
+                md:sm:pb-0
+                pb-[30vw]
                 ${inView1 ? "bg-baseColor" : "bg-mainColor"}
             `}
         >
@@ -74,7 +77,7 @@ export default function SectionApply() {
                         color={textBaseColor}
                     />
                 </h2>
-                <p className="block mb-[30px] md:sm:ml-[-5px] md:sm:text-left text-center md:sm:w-full w-[95%] mx-auto">
+                <p className="block mb-[30px] md:sm:ml-[-5px] md:sm:text-left text-center md:sm:w-full w-[90%] mx-auto">
                     <MainTextComponent
                         text={mainTextData1}
                         baseColor={textBaseColor}

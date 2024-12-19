@@ -27,7 +27,7 @@ export default function VisualBreak() {
         <section
             className={`
                 md:sm:pt-[100vh]
-                pt-[30vh]
+                pt-[30vw]
                 ${inView ? "bg-baseColor" : "bg-mainColor"}
             `}
         >
@@ -36,22 +36,17 @@ export default function VisualBreak() {
                     className="
                         relative
                         inner
-                        pb-[80px]
-                        flex
-                        md:sm:flex-col
-                        md:sm:gap-x-[0]
+                        md:sm:pb-[80px]
                         gap-x-[3%]
-                        flex-row
-                        md:sm:justify-start
-                        justify-between
-                        md:sm:items-start
-                        items-end
                     "
                 >
                     <div
                         className={`
                             relative
                             w-full
+                            md:sm:block
+                            grid
+                            place-items-center
                             ${imgHeight}
                         `}
                     >
@@ -61,6 +56,8 @@ export default function VisualBreak() {
                                 top-0
                                 w-full
                                 max-w-[513px]
+                                md:sm:mb-0
+                                mb-[10vw]
                                 ${
                                     inView
                                         ? "md:sm:left-[100%] md:sm:translate-x-[-100%]"
@@ -76,12 +73,15 @@ export default function VisualBreak() {
                     </div>
                     <p
                         className={`
+                            md:sm:w-initial
+                            w-[75%]
+                            md:sm:mx-initial
+                            mx-auto
                             block
                             md:sm:absolute
                             bottom-0
                             md:sm:whitespace-nowrap
-                            md:sm:[writing-mode:horizontal-tb]
-                            [writing-mode:vertical-lr]
+                            text-center
                             ${
                                 inView
                                     ? "md:sm:right-[100%] md:sm:translate-x-[calc(100%+20px)]"
@@ -99,7 +99,8 @@ export default function VisualBreak() {
             <div
                 ref={ref}
                 className={`
-                    pb-[150px]
+                    md:sm:pb-[150px]
+                    pb-[30vw]
                     ${inView ? "bg-mainColor" : "bg-baseColor"}
                 `}
             >
@@ -107,16 +108,8 @@ export default function VisualBreak() {
                     className="
                         relative
                         inner
-                        pt-[80px]
-                        flex
-                        md:sm:flex-col
-                        flex-row
-                        md:sm:gap-x-[0]
+                        md:sm:pt-[80px]
                         gap-x-[3%]
-                        md:sm:justify-start
-                        justify-between
-                        md:sm:items-start
-                        items-start
                     "
                 >
                     <div
@@ -126,12 +119,15 @@ export default function VisualBreak() {
                     >
                         <p
                             className={`
+                                md:sm:w-initial
+                                w-[75%]
+                                md:sm:mx-initial
+                                mx-auto
                                 block
                                 md:sm:absolute
                                 top-[5px]
                                 md:sm:whitespace-nowrap
-                                md:sm:[writing-mode:horizontal-tb]
-                                [writing-mode:vertical-lr]
+                                text-center
                                 ${
                                     inView
                                         ? "md:sm:left-[100%] md:sm:translate-x-[calc(-100%-20px)]"
@@ -148,8 +144,10 @@ export default function VisualBreak() {
                     <div
                         className={`
                             relative
-                            top-0
                             w-full
+                            md:sm:block
+                            grid
+                            place-items-center
                             ${imgHeight}
                         `}
                     >
@@ -159,6 +157,8 @@ export default function VisualBreak() {
                                 top-0
                                 w-full
                                 max-w-[513px]
+                                md:sm:mt-0
+                                mt-[10vw]
                                 ${
                                     inView
                                         ? "md:sm:right-[100%] md:sm:translate-x-[100%]"

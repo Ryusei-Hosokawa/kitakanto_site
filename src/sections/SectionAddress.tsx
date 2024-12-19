@@ -17,13 +17,18 @@ export default function SectionAddress() {
 
     return (
         <section
+            id="ADDRESS"
             className="
                 relative
                 z-[0]
-                pt-[50vh]
-                pb-[100px]
-                mt-[-50px]
+                md:sm:pt-[50vh]
+                pt-[30vw]
+                md:sm:pb-[100px]
+                pb-[30vw]
+                md:sm:mt-[-50px]
                 overflow-y-clip
+                md:sm:text-left
+                text-center
             "
         >
             <div

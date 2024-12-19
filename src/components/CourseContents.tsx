@@ -28,7 +28,7 @@ export default function CourseContents() {
                     md:sm:w-[min(28vw,300px)]
                     md:sm:h-[min(28vw,300px)]
                     w-full
-                    h-[min(50vw,335px)]
+                    h-[min(40vw,335px)]
                     group
                     overflow-hidden
                     rounded-[30px]
@@ -55,7 +55,7 @@ export default function CourseContents() {
                         imageName={data.image} 
                     />
                 </a>
-                <div 
+                <p
                     className="
                         absolute
                         top-[50%]
@@ -67,11 +67,11 @@ export default function CourseContents() {
                         text-[#e5e7eb]
                         group-hover:text-accentColor
                         md:sm:text-[40px]
-                        text-[12vw]
+                        text-[10vw]
                     "
                 >
                     {data.title}<br />コース
-                </div>
+                </p>
             </button>
         );
     });

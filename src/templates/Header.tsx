@@ -73,7 +73,10 @@ export default function Header() {
                     }
                 `}
             >
-                <NavList listsData={sections} />
+                <NavList 
+                    listsData={sections}
+                    onListClick={() => handleClick()}
+                />
             </div>
         </header>
     );

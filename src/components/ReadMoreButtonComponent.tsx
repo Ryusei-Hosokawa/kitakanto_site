@@ -38,8 +38,8 @@ export default function ReadMoreButtonContent({
                     }
                     ${
                         index % 2 === 0
-                            ? "md:sm:text-[24px] text-[21px] border-b-[1px] border-textColor3 group-hover:md:sm:border-accentColor"
-                            : "md:sm:text-[20px] text-[18px]"
+                            ? "md:sm:text-[24px] text-[5.6vw] border-b-[1px] border-textColor3 group-hover:md:sm:border-accentColor"
+                            : "md:sm:text-[20px] text-[4.5vw]"
                     }
                 `}
             >
@@ -55,7 +55,7 @@ export default function ReadMoreButtonContent({
             block
             w-full
             md:sm:max-w-[180px]
-            max-w-[120px]
+            max-w-[32vw]
             relative
             z-[99]
             before:absolute

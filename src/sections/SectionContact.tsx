@@ -25,13 +25,14 @@ export default function SectionContact() {
     ];
     return (
         <section
+            id="CONTACT"
             className="
                 relative
                 flex
                 flex-col
                 justify-center
                 md:sm:pb-[0]
-                pb-[25vw]
+                py-[25vw]
                 md:sm:w-[50%]
                 w-full
                 md:sm:h-[min(50vw,650px)]
@@ -49,10 +50,10 @@ export default function SectionContact() {
                     EnglishText={"CONTRACT"}
                     JapaneseText={"連絡"}
                     color={textBaseColor}
-                    marginBottom={"mb-[50px]"}
+                    marginBottom={"md:lg:mb-[50px] mb-[3vw]"}
                 />
             </h2>
-            <div className="w-fit mx-auto mb-[30px]">
+            <div className="w-fit mx-auto mb-[30px] md:sm:text-left text-center">
                 <SubTextComponent
                     text={subTextData}
                     baseColor={baseColorManager(textBaseColor)}
@@ -65,7 +66,8 @@ export default function SectionContact() {
                     block
                     text-center
                     leading-[1em]
-                    text-[68px] 
+                    text-[7vw]
+                    md:lg:text-[68px]
                     ${baseColorManager(textBaseColor)}
                 `}
             >

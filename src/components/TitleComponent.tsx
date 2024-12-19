@@ -13,8 +13,8 @@ export default function TitleComponent({
     EnglishText,
     JapaneseText,
     color = "b-w",
-    marginBottom = "md:sm:mb-[180px]",
-    textSize =  "md:sm:text-[135px] text-[22vw]",
+    marginBottom = "md:lg:mb-[180px] mb-[100px]",
+    textSize =  "md:lg:text-[135px] md:sm:text-[12vw] text-[22vw]",
 }: TitleTextProps) {
     return (
         <h2 
@@ -24,7 +24,6 @@ export default function TitleComponent({
                 mx-auto
                 ${textSize}
                 ${marginBottom}
-                mb-[100px]
             `}
         >
             <strong
