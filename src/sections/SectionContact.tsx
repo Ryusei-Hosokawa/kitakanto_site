@@ -27,8 +27,9 @@ export default function SectionContact() {
         <section
             className="
                 relative
-                md:sm:pt-[100px]
-                pt-[30vw]
+                flex
+                flex-col
+                justify-center
                 md:sm:pb-[0]
                 pb-[25vw]
                 md:sm:w-[50%]
