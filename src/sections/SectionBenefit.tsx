@@ -32,9 +32,8 @@ export default function SectionContact() {
                 relative
                 flex
                 flex-col
+                justify-center
                 align-center
-                md:sm:pt-[100px]
-                pt-[30vw]
                 md:sm:pb-[0]
                 pb-[25vw]
                 md:sm:w-[50%]
