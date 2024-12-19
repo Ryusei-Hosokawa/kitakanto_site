@@ -507,8 +507,9 @@ Error generating stack: `+o.message+`
                             mb-[20px]
                         `,children:c.jsx(jt,{text:d,baseColor:h})}),c.jsx("p",{className:`text-[60px] leading-[1em] ${Nt(h)}`,children:"9:00〜18:00"})]})]})]})]})}function Ld(){const h="b-w",x=[{character:"説明会の予約 や その他",break:!0},{character:"お問合せを",break:!0},{character:"承っておりますので",break:!0},{character:"お気軽にご連絡下さい。",break:!1}];return c.jsxs("section",{className:`
                 relative
-                md:sm:pt-[100px]
-                pt-[30vw]
+                flex
+                flex-col
+                justify-center
                 md:sm:pb-[0]
                 pb-[25vw]
                 md:sm:w-[50%]
@@ -533,9 +534,8 @@ Error generating stack: `+o.message+`
                 relative
                 flex
                 flex-col
+                justify-center
                 align-center
-                md:sm:pt-[100px]
-                pt-[30vw]
                 md:sm:pb-[0]
                 pb-[25vw]
                 md:sm:w-[50%]
