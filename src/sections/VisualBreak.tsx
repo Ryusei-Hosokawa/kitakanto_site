@@ -51,6 +51,7 @@ export default function VisualBreak() {
                     <div
                         className={`
                             relative
+                            w-full
                             ${imgHeight}
                         `}
                     >
@@ -148,12 +149,14 @@ export default function VisualBreak() {
                         className={`
                             relative
                             top-0
+                            w-full
                             ${imgHeight}
                         `}
                     >
                         <div
                             className={`
                                 md:sm:absolute
+                                top-0
                                 w-full
                                 max-w-[513px]
                                 ${

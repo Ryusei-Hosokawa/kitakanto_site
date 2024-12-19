@@ -12,12 +12,12 @@ import SectionAddress from "./sections/SectionAddress";
 import SectionContact from "./sections/SectionContact";
 import SectionBenefit from "./sections/SectionBenefit";
 import Footer from "./templates/Footer";
-import { styleLink } from "./styleLink.ts";
+import StyleLink from "./StyleLink";
 
 export default function App() {
     return (
         <>
-            {styleLink()}
+            <StyleLink/>
             <Header />
             <SectionHero />
             <div className="main-contents bg-baseColor overflow-clip">
