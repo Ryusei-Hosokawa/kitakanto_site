@@ -12,10 +12,12 @@ import SectionAddress from "./sections/SectionAddress";
 import SectionContact from "./sections/SectionContact";
 import SectionBenefit from "./sections/SectionBenefit";
 import Footer from "./templates/Footer";
+import { styleLink } from "./styleLink.ts";
 
 export default function App() {
     return (
         <>
+            {styleLink()}
             <Header />
             <SectionHero />
             <div className="main-contents bg-baseColor overflow-clip">
@@ -27,14 +29,14 @@ export default function App() {
                 <SectionApply />
                 <SectionAcceptance />
                 <SectionAddress />
-                <div 
+                <div
                     className="
                         md:sm:flex
                         inner
                     "
-                    style={{ 
-                        paddingLeft: "0px", 
-                        paddingRight: "0px"
+                    style={{
+                        paddingLeft: "0px",
+                        paddingRight: "0px",
                     }}
                 >
                     <SectionContact />
