@@ -74,7 +74,7 @@ export default function SectionAddress() {
                                 rounded-[20px]
                                 w-full
                                 max-w-[500px]
-                                md:sm:h-[max(500px,45vh)]
+                                md:sm:h-[max(500px,45vw)]
                                 h-[25vh]
                             "
                     ></iframe>
