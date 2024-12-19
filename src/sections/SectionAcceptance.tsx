@@ -11,7 +11,9 @@ export default function SectionAcceptance() {
     ];
 
     return (
-        <section className="pt-[100vh]">
+        <section 
+            id="ACCEPTANCE"
+            className="md:sm:pt-[100vh] pt-[30vw] md:sm:mb-0 mb-[30vw]">
             <div className="inner">
                 <h2>
                     <TitleComponent

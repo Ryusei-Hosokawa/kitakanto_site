@@ -36,6 +36,7 @@ export default function SectionCourse() {
                 `}
         >
             <div
+                id="COURSE"
                 className="
                     inner
                     md:sm:pb-[300px]

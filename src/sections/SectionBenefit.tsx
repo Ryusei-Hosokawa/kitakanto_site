@@ -28,6 +28,7 @@ export default function SectionContact() {
     ];
     return (
         <section 
+            id="BENEFIT"
             className="
                 relative
                 flex
@@ -35,7 +36,7 @@ export default function SectionContact() {
                 justify-center
                 align-center
                 md:sm:pb-[0]
-                pb-[25vw]
+                py-[25vw]
                 md:sm:w-[50%]
                 w-full
                 md:sm:h-[min(50vw,650px)]
@@ -58,10 +59,10 @@ export default function SectionContact() {
                     EnglishText={"BENEFIT"}
                     JapaneseText={"給付金"}
                     color={textBaseColor}
-                    marginBottom={"mb-[50px]"}
+                    marginBottom={"md:lg:mb-[50px] mb-[3vw]"}
                 />
             </h2>
-            <div className="w-fit mx-auto mb-[30px]">
+            <div className="w-fit mx-auto md:sm:text-left text-center">
                 <SubTextComponent
                     text={subTextData}
                     baseColor={baseColorManager(textBaseColor)}

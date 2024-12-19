@@ -38,7 +38,9 @@ export default function SectionAbout() {
     ];
     
     return (
-        <section className="pt-[500px] pb-[50px] overflow-clip">
+        <section 
+            id="ABOUT"
+            className="pt-[500px] pb-[50px] overflow-clip">
             <div className="inner">
                 <TitleComponent
                     EnglishText={"ABOUT"}

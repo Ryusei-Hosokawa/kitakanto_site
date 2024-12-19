@@ -3,8 +3,10 @@ import Header from "./Header";
 
 export default function NavList({
     listsData,
+    onListClick,
 }: {
     listsData: { id: string; title: string }[];
+    onListClick: () => void;
 }) {
     const listItem = listsData.map((listData, index: number) => {
         return (
@@ -32,6 +34,7 @@ export default function NavList({
                         ease-in-out 
                         overflow-y-clip
                     `}
+                    onClick={onListClick}
                 >
                     {Array.from({ length: 2 }, (_, index) => (
                         <span
@@ -40,9 +43,9 @@ export default function NavList({
                                 block
                                 group-hover:translate-y-[-100%]
                                 ${
-                                    index === 1 ?
-                                    "text-accentColor" :
-                                     "[text-shadow:1px_1px_0_#FFF,-1px_-1px_0_#FFF,-1px_1px_0_#FFF,1px_-1px_0_#FFF,0px_1px_0_#FFF,_0_-1px_0_#FFF,-1px_0_0_#FFF,1px_0_0_#FFF]"
+                                    index === 1
+                                        ? "text-accentColor"
+                                        : "[text-shadow:1px_1px_0_#FFF,-1px_-1px_0_#FFF,-1px_1px_0_#FFF,1px_-1px_0_#FFF,0px_1px_0_#FFF,_0_-1px_0_#FFF,-1px_0_0_#FFF,1px_0_0_#FFF]"
                                 }
                             `}
                         >
