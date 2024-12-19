@@ -22,7 +22,7 @@
     margin: 0 auto;
 }
 
-.scroll-animation_scale {
+/* .scroll-animation_scale {
     transform-origin: center;
     animation: scaleAnimation linear forwards;
     animation-timeline: scroll();
@@ -120,4 +120,4 @@
         transform: translateX(0%);
         opacity: 1;
     }
-}
+} */
