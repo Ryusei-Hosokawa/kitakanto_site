@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ImageComponent from "../components/ImageComponent";
 import { getBodyElement } from "../getBodyElement.ts";
 
 export default function ThemeToggle() {
@@ -31,7 +32,8 @@ export default function ThemeToggle() {
         >
             <span
                 className={`
-                    block
+                    grid
+                    place-items-center
                     w-[26px]
                     h-[26px]
                     rounded-[50%]
@@ -49,7 +51,21 @@ export default function ThemeToggle() {
                             : "left-0 bg-[#525558]"
                     }
                 `}
-            ></span>
+            >
+                {theme ? (
+                    <ImageComponent
+                        imageName={"icon_dark"}
+                        extensionName={"svg"}
+                        classText={"w-[70%]"}
+                    />
+                ) : (
+                    <ImageComponent
+                        imageName={"icon_light"}
+                        extensionName={"svg"}
+                        classText={"w-[70%]"}
+                    />
+                )}
+            </span>
         </button>
     );
 }

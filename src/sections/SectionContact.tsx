@@ -66,7 +66,7 @@ export default function SectionContact() {
                     block
                     text-center
                     leading-[1em]
-                    text-[7vw]
+                    text-[12vw]
                     md:lg:text-[68px]
                     ${baseColorManager(textBaseColor)}
                 `}

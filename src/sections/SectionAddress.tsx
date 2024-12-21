@@ -6,7 +6,7 @@ import { baseColorManager } from "../baseColorManager";
 import { useScrollTrigger } from "../hooks/useScrollTrigger";
 
 export default function SectionAddress() {
-    const textBaseColor = "w-b";
+    const textBaseColor = "text-[#eaeef1]";
     const subTextData = [
         { character: "〒060-0001", break: true },
         { character: "北海道札幌市中央区 南9条西3丁目", break: true },
