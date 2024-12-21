@@ -16,7 +16,8 @@ export default function NavList({
                     grid
                     place-items-center
                     font-[alternate-gothic-condensed-a]
-                    text-[85px]
+                    md:sm:text-[85px]
+                    text-[max(13vw,70px)]
                 "
             >
                 <a

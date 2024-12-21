@@ -32,7 +32,7 @@ export default function Header() {
                 fixed
                 z-[999]
                 pt-[50px]
-                px-[50px]
+                pl-[40px]
                 w-full
                 h-[80px]
                 ${
@@ -47,13 +47,13 @@ export default function Header() {
                     toggle={toggle}
                     onNavButtonClick={() => handleClick()}
                 />
-                <ThemeToggle />
             </div>
             <div
                 className={`
                     w-[98vw]
                     h-[95dvh]
-                    p-[75px_130px_50px_130px]
+                    md:sm:p-[75px_130px_50px_130px]
+                    p-[75px_0_50px_0]
                     rounded-[20px]
                     bg-mainColor
                     opacity-[0.96]
@@ -73,7 +73,17 @@ export default function Header() {
                     }
                 `}
             >
-                <NavList 
+                <div 
+                    className="
+                        absolute
+                        top-[30px]
+                        right-[30px]
+                        z-[999]
+                    "
+                >
+                    <ThemeToggle />
+                </div>
+                <NavList
                     listsData={sections}
                     onListClick={() => handleClick()}
                 />
