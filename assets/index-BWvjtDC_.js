@@ -144,6 +144,8 @@ Error generating stack: `+o.message+`
                 ${h&&"before:w-[120vw] before:h-[120vh] before:bg-[#999] before:opacity-[0.6] before:absolute before:top-[50%] before:left-[50%] before:z-[-10] before:translate-x-[-50%] before:translate-y-[-5%]"}
                 
             `,children:[c.jsx("div",{className:"flex justify-between items-center w-full",children:c.jsx(qf,{toggle:h,onNavButtonClick:()=>d()})}),c.jsxs("div",{className:`
+                    grid
+                    place-items-center
                     w-[98vw]
                     h-[95dvh]
                     md:sm:p-[75px_130px_50px_130px]
@@ -291,13 +293,17 @@ Error generating stack: `+o.message+`
                         flex
                         md:sm:flex-row
                         flex-col
-                        gap-x-[130px]
+                        justify-between
+                        items-center
+                        gap-x-[20px]
                         w-full
                         max-w-[1114px]
                         mx-auto
                     `,children:[c.jsxs("div",{className:`
+                            w-full
+                            md:sm:w-[500px]
                             md:sm:mb-0
-                            mb-[60px]
+                            mb-[8vw]
                         `,children:[c.jsx("div",{ref:F=>{d(F),E(F)},className:`
                                 md:sm:mb-[80px]
                                 mb-[40px]
@@ -314,10 +320,14 @@ Error generating stack: `+o.message+`
                             flex
                             justify-end
                             align-center
+
                         `,children:c.jsx(Ha,{url:"http://www.kitakanto-gakuin.net/"})})]}),c.jsx("div",{className:`
-                    w-full 
-                    max-w-[523px]
-                `,children:c.jsx(gt,{imageName:"w_pc",classText:"overflow-hidden rounded-[30px]"})})]})]})})}function Nd(){const h=[{character:"”なりたい”に応じて",accent:!1,break:!0},{character:"選べる3つ",accent:!0,break:!1},{character:"のコース",accent:!1,break:!1}],w=[{character:"あなたやりたい仕事 にあったスキルを",break:!0},{character:"身に付けられるコースを 選べます。",break:!0},{character:"あなたの興味が 向く職業は 何ですか？",break:!1}],{ref:d,inView:N}=nt({threshold:.45}),{ref:E,inView:D}=nt({threshold:.4}),O=D?"text-[#eaeef1]":"text-[#272829]";return c.jsx("section",{className:`
+                            w-full
+                            md:xl:max-w-[523px]
+                            max-w-[32vw]
+                            md:lx:mx-0
+                            mx-auto
+                        `,children:c.jsx(gt,{imageName:"w_pc",classText:"overflow-hidden rounded-[30px]"})})]})]})})}function Nd(){const h=[{character:"”なりたい”に応じて",accent:!1,break:!0},{character:"選べる3つ",accent:!0,break:!1},{character:"のコース",accent:!1,break:!1}],w=[{character:"あなたやりたい仕事 にあったスキルを",break:!0},{character:"身に付けられるコースを 選べます。",break:!0},{character:"あなたの興味が 向く職業は 何ですか？",break:!1}],{ref:d,inView:N}=nt({threshold:.45}),{ref:E,inView:D}=nt({threshold:.4}),O=D?"text-[#eaeef1]":"text-[#272829]";return c.jsx("section",{className:`
                 md:sm:pt-[100vh]
                 pt-[30vh]
                 ${N?"bg-mainColor":"bg-baseColor"}
@@ -328,9 +338,9 @@ Error generating stack: `+o.message+`
                     relative 
                 `,children:[c.jsx("h2",{ref:F=>{d(F),E(F)},children:c.jsx(Gt,{EnglishText:"COURSE",JapaneseText:"コースの種類",color:O})}),c.jsxs("div",{className:`
                         flex
-                        md:sm:flex-row-reverse
+                        md:sm:flex-row
                         flex-col-reverse
-                        gap-x-[70px]
+                        gap-x-[150px]
                         w-full
                     `,children:[c.jsx("div",{className:`
                             w-full 
@@ -440,8 +450,8 @@ Error generating stack: `+o.message+`
                         mb-[30px]
                     `,children:c.jsx(gt,{imageName:"study",classText:"overflow-hidden rounded-[30px_0px_0px_30px]"})}),c.jsx(Tt,{text:w,baseColor:F})]})})}function Pd(){const w=[{title:"Webデザイン",ulr:"http://www.kitakanto-gakuin.net/flyer/web_2023_04.pdf",image:"photo_design"},{title:"パソコン基礎",ulr:"http://www.kitakanto-gakuin.net",image:"photo_base"},{title:"ITプログラミング",ulr:"http://www.kitakanto-gakuin.net",image:"photo_programming"}].map((d,N)=>c.jsxs("button",{className:`
                     relative
-                    md:sm:w-[min(28vw,300px)]
-                    md:sm:h-[min(28vw,300px)]
+                    md:sm:w-[min(29vw,310px)]
+                    md:sm:h-[min(29vw,310px)]
                     w-full
                     h-[min(40vw,335px)]
                     group
