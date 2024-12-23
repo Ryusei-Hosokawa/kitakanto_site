@@ -19,11 +19,9 @@ export default function SectionCourse() {
     ];
     const { ref: ref1, inView: inView1 } = useScrollTrigger({
         threshold: 0.45,
-
     });
     const { ref: ref2, inView: inView2 } = useScrollTrigger({
         threshold: 0.4,
-
     });
     const textBaseColor = inView2 ? "text-[#eaeef1]" : "text-[#272829]";
 
@@ -44,10 +42,12 @@ export default function SectionCourse() {
                     relative 
                 "
             >
-                <h2 ref={(node) => {
-                    ref1(node);
-                    ref2(node);
-                }}>
+                <h2
+                    ref={(node) => {
+                        ref1(node);
+                        ref2(node);
+                    }}
+                >
                     <TitleComponent
                         EnglishText="COURSE"
                         JapaneseText="コースの種類"
@@ -57,9 +57,13 @@ export default function SectionCourse() {
                 <div
                     className="
                         flex
+                        justify-between
+                        items-center
                         md:sm:flex-row
                         flex-col-reverse
-                        gap-x-[150px]
+                        md:xl:pr-[150px]
+                        pr-0
+                        gap-x-[40px]
                         w-full
                     "
                 >
@@ -67,6 +71,7 @@ export default function SectionCourse() {
                         className="
                             w-full 
                             max-w-[718px]
+                            min-w-[200px]
                             ml-[-20px]
                             md:sm:pt-[200px]
                             pt-[70px]
@@ -77,7 +82,13 @@ export default function SectionCourse() {
                             classText={"overflow-hidden rounded-[30px]"}
                         />
                     </div>
-                    <div className="">
+                    <div
+                        className="
+                            md:sm:w-[450px]
+                            w-full
+                            min-w-[450px]
+                        "
+                    >
                         <div
                             className="mb-[50px]
                                 md:sm:text-left
@@ -109,7 +120,9 @@ export default function SectionCourse() {
                                 w-full
                             "
                         >
-                            <ReadMoreButtonComponent url={"http://www.kitakanto-gakuin.net/"} />
+                            <ReadMoreButtonComponent
+                                url={"http://www.kitakanto-gakuin.net/"}
+                            />
                         </div>
                     </div>
                 </div>
