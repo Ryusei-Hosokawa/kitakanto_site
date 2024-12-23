@@ -57,9 +57,9 @@ export default function SectionCourse() {
                 <div
                     className="
                         flex
-                        md:sm:flex-row-reverse
+                        md:sm:flex-row
                         flex-col-reverse
-                        gap-x-[70px]
+                        gap-x-[150px]
                         w-full
                     "
                 >

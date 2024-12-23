@@ -25,8 +25,8 @@ export default function CourseContents() {
                 key={index}
                 className="
                     relative
-                    md:sm:w-[min(28vw,300px)]
-                    md:sm:h-[min(28vw,300px)]
+                    md:sm:w-[min(29vw,310px)]
+                    md:sm:h-[min(29vw,310px)]
                     w-full
                     h-[min(40vw,335px)]
                     group
