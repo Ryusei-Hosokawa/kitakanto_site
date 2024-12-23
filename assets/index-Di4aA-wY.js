@@ -338,17 +338,26 @@ Error generating stack: `+o.message+`
                     relative 
                 `,children:[c.jsx("h2",{ref:F=>{d(F),E(F)},children:c.jsx(Gt,{EnglishText:"COURSE",JapaneseText:"コースの種類",color:O})}),c.jsxs("div",{className:`
                         flex
+                        justify-between
+                        items-center
                         md:sm:flex-row
                         flex-col-reverse
-                        gap-x-[150px]
+                        md:xl:pr-[150px]
+                        pr-0
+                        gap-x-[40px]
                         w-full
                     `,children:[c.jsx("div",{className:`
                             w-full 
                             max-w-[718px]
+                            min-w-[200px]
                             ml-[-20px]
                             md:sm:pt-[200px]
                             pt-[70px]
-                        `,children:c.jsx(gt,{imageName:"lesson_time",classText:"overflow-hidden rounded-[30px]"})}),c.jsxs("div",{className:"",children:[c.jsx("div",{className:`mb-[50px]
+                        `,children:c.jsx(gt,{imageName:"lesson_time",classText:"overflow-hidden rounded-[30px]"})}),c.jsxs("div",{className:`
+                            md:sm:w-[450px]
+                            w-full
+                            min-w-[450px]
+                        `,children:[c.jsx("div",{className:`mb-[50px]
                                 md:sm:text-left
                                 text-center
                             `,children:c.jsx(Tt,{text:h,baseColor:O})}),c.jsx("div",{className:`
