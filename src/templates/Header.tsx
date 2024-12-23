@@ -50,6 +50,8 @@ export default function Header() {
             </div>
             <div
                 className={`
+                    grid
+                    place-items-center
                     w-[98vw]
                     h-[95dvh]
                     md:sm:p-[75px_130px_50px_130px]

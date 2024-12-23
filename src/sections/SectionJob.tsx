@@ -52,7 +52,9 @@ export default function SectionJob() {
                         flex
                         md:sm:flex-row
                         flex-col
-                        gap-x-[130px]
+                        justify-between
+                        items-center
+                        gap-x-[20px]
                         w-full
                         max-w-[1114px]
                         mx-auto
@@ -60,8 +62,10 @@ export default function SectionJob() {
                 >
                     <div 
                         className="
+                            w-full
+                            md:sm:w-[500px]
                             md:sm:mb-0
-                            mb-[60px]
+                            mb-[8vw]
                         "
                     >
                         <div
@@ -105,6 +109,7 @@ export default function SectionJob() {
                             flex
                             justify-end
                             align-center
+
                         "
                         >
                             <ReadMoreButtonContent
@@ -114,9 +119,12 @@ export default function SectionJob() {
                     </div>
                     <div
                         className="
-                    w-full 
-                    max-w-[523px]
-                "
+                            w-full
+                            md:xl:max-w-[523px]
+                            max-w-[32vw]
+                            md:lx:mx-0
+                            mx-auto
+                        "
                     >
                         <ImageComponent
                             imageName={"w_pc"}
