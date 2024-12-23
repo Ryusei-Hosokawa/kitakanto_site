@@ -20,13 +20,13 @@ export default function ThemeToggle() {
                 w-[60px]
                 h-[30px]
                 border-[2px]
+                border-[#f9fafa]
                 rounded-[50px]
                 transition-all
                 duration-[0.25s]
                 ease-in-out
-                bg-baseColor
+                bg-mainColor
                 hover:scale-[1.1]
-                ${theme ? "border-[#d0d1d1]" : "border-[#525558]"}
             `}
             onClick={handleThemeClick}
         >
@@ -38,32 +38,55 @@ export default function ThemeToggle() {
                     h-[26px]
                     rounded-[50%]
                     border-[2px]
-                    border-baseColor
+                    border-mainColor
                     transition-all
                     duration-[0.25s]
                     ease-in-out
                     absolute
                     top-[50%]
                     translate-y-[-50%]
+                    overflow-clip
+                    bg-[#f9fafa]
                     ${
                         theme
-                            ? "left-[100%] translate-x-[-100%] bg-[#d0d1d1]"
-                            : "left-0 bg-[#525558]"
+                            ? "left-[100%] translate-x-[-100%] "
+                            : "left-0"
                     }
                 `}
             >
                 {theme ? (
-                    <ImageComponent
-                        imageName={"icon_dark"}
-                        extensionName={"svg"}
-                        classText={"w-[70%]"}
-                    />
+                    <div
+                        className={`
+                            w-[70%]
+                            transition-all
+                            ${
+                                theme
+                                    ? "animationMoveIconRight"
+                                    : ""
+                            }
+                        `}
+                    >
+                        <ImageComponent
+                            imageName={"icon_dark"}
+                            extensionName={"svg"}
+                        />
+                    </div>
                 ) : (
-                    <ImageComponent
-                        imageName={"icon_light"}
-                        extensionName={"svg"}
-                        classText={"w-[70%]"}
-                    />
+                    <div
+                        className={`
+                            w-[70%]
+                            ${
+                                theme
+                                    ? ""
+                                    : "animationMoveIconLeft"
+                            }
+                        `}
+                    >
+                        <ImageComponent
+                            imageName={"icon_light"}
+                            extensionName={"svg"}
+                        />
+                    </div>
                 )}
             </span>
         </button>

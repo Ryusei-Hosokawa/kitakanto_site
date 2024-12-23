@@ -33,6 +33,7 @@ export default function SectionContact() {
                 justify-center
                 md:sm:pb-[0]
                 py-[25vw]
+                md:sm:py-0
                 md:sm:w-[50%]
                 w-full
                 md:sm:h-[min(50vw,650px)]
@@ -67,7 +68,7 @@ export default function SectionContact() {
                     text-center
                     leading-[1em]
                     text-[12vw]
-                    md:lg:text-[68px]
+                    md:sm:text-[68px]
                     ${baseColorManager(textBaseColor)}
                 `}
             >
