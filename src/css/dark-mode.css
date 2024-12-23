@@ -2,7 +2,7 @@
 
 :root {
     --baseColor: #eaeef1;
-    --mainColor: #0f487a;
+    --mainColor: #125794;
     --bgColor1: #d4d8de;
     --bgColor2: #e5e8ee;
     --navBaseColor: #071a2b;
@@ -12,7 +12,7 @@
     --textColor1: #272829;
     --textColor2: #eaeef1;
     --textColor3: #50adff;
-    --accentColor: #ed9405;
+    --accentColor: #db8804;
     --titleColor1: #f5f3f3;
     --titleColor2: #ed9405;
     --titleColor3: #272829;
@@ -21,7 +21,7 @@
 
 .isDark {
     --baseColor: #1c1d20;
-    --mainColor: #125d9f;
+    --mainColor: #0e4c83;
     --bgColor1: #3b3c3d;
     --bgColor2: #696a6d;
     --navBaseColor: #071a2b;

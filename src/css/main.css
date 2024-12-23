@@ -28,7 +28,7 @@ html {
     margin: 0 auto;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
     .scroll-animation_scale {
         transform-origin: center;
         animation: scaleAnimation linear forwards;
@@ -127,5 +127,54 @@ html {
             transform: translateX(0%);
             opacity: 1;
         }
+    }
+}
+
+.animationMoveIconRight {
+    animation: animationMoveIconRight  0.5s ease-in-out 0.1s forwards;
+    opacity: 0;
+}
+@-webkit-keyframes animationMoveIconRight {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes animationMoveIconRight {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.animationMoveIconLeft {
+    animation: animationMoveIconLeft  0.5s ease-in-out 0.1s forwards;
+    opacity: 0;
+}
+@-webkit-keyframes animationMoveIconLeft {
+    0% {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes animationMoveIconLeft {
+    0% {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
     }
 }

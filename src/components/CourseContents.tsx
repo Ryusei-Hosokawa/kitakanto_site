@@ -49,7 +49,9 @@ export default function CourseContents() {
                         brightness-[0.7]
                         group-hover:scale-[1.2]
                         duration-[250ms]
-                "
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <ImageComponent 
                         imageName={data.image} 
@@ -60,14 +62,16 @@ export default function CourseContents() {
                         absolute
                         top-[50%]
                         left-[50%]
-                        z-[100]
+                        z-[10]
                         translate-x-[-50%]
                         translate-y-[-50%]
                         w-full
                         text-[#e5e7eb]
                         group-hover:text-accentColor
-                        md:sm:text-[40px]
-                        text-[10vw]
+                        md:lg:text-[40px]
+                        md:sm:text-[4vw]
+                        text-[8vw]
+                        pointer-events-none
                     "
                 >
                     {data.title}<br />コース

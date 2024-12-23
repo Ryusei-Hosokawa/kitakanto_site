@@ -37,6 +37,7 @@ export default function SectionContact() {
                 align-center
                 md:sm:pb-[0]
                 py-[25vw]
+                md:sm:py-0
                 md:sm:w-[50%]
                 w-full
                 md:sm:h-[min(50vw,650px)]
