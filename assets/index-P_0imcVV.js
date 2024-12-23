@@ -73,7 +73,7 @@ Error generating stack: `+o.message+`
                     transition-all
                     duration-[0.25s]
                     ease-in-out translate(-50%,-5px)
-                `})]})}const bf="/kitakanto_site/assets/book-CAC4QKRO.jpg",ed="/kitakanto_site/assets/corridor-CeE41tJO.jpg",td="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%230f487a'%3e%3cpath%20d='M480-120q-150%200-255-105T120-480q0-150%20105-255t255-105q14%200%2027.5%201t26.5%203q-41%2029-65.5%2075.5T444-660q0%2090%2063%20153t153%2063q55%200%20101-24.5t75-65.5q2%2013%203%2026.5t1%2027.5q0%20150-105%20255T480-120Zm0-80q88%200%20158-48.5T740-375q-20%205-40%208t-40%203q-123%200-209.5-86.5T364-660q0-20%203-40t8-40q-78%2032-126.5%20102T200-480q0%20116%2082%20198t198%2082Zm-10-270Z'/%3e%3c/svg%3e",nd="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e8eaed'%3e%3cpath%20d='M440-800v-120h80v120h-80Zm0%20760v-120h80v120h-80Zm360-400v-80h120v80H800Zm-760%200v-80h120v80H40Zm708-252-56-56%2070-72%2058%2058-72%2070ZM198-140l-58-58%2072-70%2056%2056-70%2072Zm564%200-70-72%2056-56%2072%2070-58%2058ZM212-692l-72-70%2058-58%2070%2072-56%2056Zm268%20452q-100%200-170-70t-70-170q0-100%2070-170t170-70q100%200%20170%2070t70%20170q0%20100-70%20170t-170%2070Zm0-80q67%200%20113.5-46.5T640-480q0-67-46.5-113.5T480-640q-67%200-113.5%2046.5T320-480q0%2067%2046.5%20113.5T480-320Zm0-160Z'/%3e%3c/svg%3e",rd="/kitakanto_site/assets/kitakantou_icon-5-B9xoF0bd.jpg",ld="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAC+AnADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AL+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9k=",od="/kitakanto_site/assets/lesson_desk-xW0s3zxV.jpg",id="/kitakanto_site/assets/lesson_time-Dgk8zINM.jpg",ud="/kitakanto_site/assets/photo_base-BZY1u94Z.jpg",sd="/kitakanto_site/assets/photo_design-BFnBiiUd.jpg",ad="/kitakanto_site/assets/photo_programming-7EMwzBqk.jpg",cd="/kitakanto_site/assets/school_icon-CejJsTrI.jpg",fd="/kitakanto_site/assets/study-DvNilsdq.jpg",dd="/kitakanto_site/assets/w_pc-5zn75Ufg.jpg",pd=(h,w="jpg")=>new URL(Object.assign({"./assets/images/book.jpg":bf,"./assets/images/corridor.jpg":ed,"./assets/images/icon_dark.svg":td,"./assets/images/icon_light.svg":nd,"./assets/images/kitakantou_icon-5.jpg":rd,"./assets/images/kitakantou_text.jpg":ld,"./assets/images/lesson_desk.jpg":od,"./assets/images/lesson_time.jpg":id,"./assets/images/photo_base.jpg":ud,"./assets/images/photo_design.jpg":sd,"./assets/images/photo_programming.jpg":ad,"./assets/images/school_icon.jpg":cd,"./assets/images/study.jpg":fd,"./assets/images/w_pc.jpg":dd})[`./assets/images/${h}.${w}`],import.meta.url).href;var Fi=new Map,Fl=new WeakMap,$a=0,md=void 0;function hd(h){return h?(Fl.has(h)||($a+=1,Fl.set(h,$a.toString())),Fl.get(h)):"0"}function vd(h){return Object.keys(h).sort().filter(w=>h[w]!==void 0).map(w=>`${w}_${w==="root"?hd(h.root):h[w]}`).toString()}function Ad(h){const w=vd(h);let d=Fi.get(w);if(!d){const N=new Map;let E;const D=new IntersectionObserver(O=>{O.forEach(F=>{var I;const q=F.isIntersecting&&E.some(ne=>F.intersectionRatio>=ne);h.trackVisibility&&typeof F.isVisible>"u"&&(F.isVisible=q),(I=N.get(F.target))==null||I.forEach(ne=>{ne(q,F)})})},h);E=D.thresholds||(Array.isArray(h.threshold)?h.threshold:[h.threshold||0]),d={id:w,observer:D,elements:N},Fi.set(w,d)}return d}function gd(h,w,d={},N=md){if(typeof window.IntersectionObserver>"u"&&N!==void 0){const I=h.getBoundingClientRect();return w(N,{isIntersecting:N,target:h,intersectionRatio:typeof d.threshold=="number"?d.threshold:0,time:0,boundingClientRect:I,intersectionRect:I,rootBounds:I}),()=>{}}const{id:E,observer:D,elements:O}=Ad(d),F=O.get(h)||[];return O.has(h)||O.set(h,F),F.push(w),D.observe(h),function(){F.splice(F.indexOf(w),1),F.length===0&&(O.delete(h),D.unobserve(h)),O.size===0&&(D.disconnect(),Fi.delete(E))}}function yd({threshold:h,delay:w,trackVisibility:d,rootMargin:N,root:E,triggerOnce:D,skip:O,initialInView:F,fallbackInView:I,onChange:q}={}){var ne;const[J,b]=Jt.useState(null),_e=Jt.useRef(q),[Ee,G]=Jt.useState({inView:!!F,entry:void 0});_e.current=q,Jt.useEffect(()=>{if(O||!J)return;let ge;return ge=gd(J,(me,Pe)=>{G({inView:me,entry:Pe}),_e.current&&_e.current(me,Pe),Pe.isIntersecting&&D&&ge&&(ge(),ge=void 0)},{root:E,rootMargin:N,threshold:h,trackVisibility:d,delay:w},I),()=>{ge&&ge()}},[Array.isArray(h)?h.toString():h,J,E,N,D,O,d,I,w]);const Y=(ne=Ee.entry)==null?void 0:ne.target,Ze=Jt.useRef(void 0);!J&&Y&&!D&&!O&&Ze.current!==Y&&(Ze.current=Y,G({inView:!!F,entry:void 0}));const Ae=[b,Ee.inView,Ee.entry];return Ae.ref=Ae[0],Ae.inView=Ae[1],Ae.entry=Ae[2],Ae}function nt({root:h=null,rootMargin:w="0px 0px",threshold:d=.1,triggerOnce:N=!0}){const{ref:E,inView:D}=yd({root:h,rootMargin:w,threshold:d,triggerOnce:N});return{ref:E,inView:D}}function gt({imageName:h,extensionName:w="jpg",classText:d}){const{ref:N,inView:E}=nt({threshold:.2});return c.jsx("img",{ref:N,src:pd(h,w),className:`w-full h-[auto] delay-[250ms] duration-[400ms] ${E?"opacity-[1] scale-1":"opacity-0 scale-[0.8]"} ${d}`})}const Bi=()=>document.body;function xd(){const[h,w]=Jt.useState(!1),d=()=>{const N=Bi();h?N.classList.remove("isDark"):N.classList.add("isDark"),w(!h)};return c.jsx("button",{className:`
+                `})]})}const bf="/kitakanto_site/assets/book-CAC4QKRO.jpg",ed="/kitakanto_site/assets/corridor-CeE41tJO.jpg",td="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23db8804'%3e%3cpath%20d='M480-120q-150%200-255-105T120-480q0-150%20105-255t255-105q14%200%2027.5%201t26.5%203q-41%2029-65.5%2075.5T444-660q0%2090%2063%20153t153%2063q55%200%20101-24.5t75-65.5q2%2013%203%2026.5t1%2027.5q0%20150-105%20255T480-120Zm0-80q88%200%20158-48.5T740-375q-20%205-40%208t-40%203q-123%200-209.5-86.5T364-660q0-20%203-40t8-40q-78%2032-126.5%20102T200-480q0%20116%2082%20198t198%2082Zm-10-270Z'/%3e%3c/svg%3e",nd="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23ed9405'%3e%3cpath%20d='M440-800v-120h80v120h-80Zm0%20760v-120h80v120h-80Zm360-400v-80h120v80H800Zm-760%200v-80h120v80H40Zm708-252-56-56%2070-72%2058%2058-72%2070ZM198-140l-58-58%2072-70%2056%2056-70%2072Zm564%200-70-72%2056-56%2072%2070-58%2058ZM212-692l-72-70%2058-58%2070%2072-56%2056Zm268%20452q-100%200-170-70t-70-170q0-100%2070-170t170-70q100%200%20170%2070t70%20170q0%20100-70%20170t-170%2070Zm0-80q67%200%20113.5-46.5T640-480q0-67-46.5-113.5T480-640q-67%200-113.5%2046.5T320-480q0%2067%2046.5%20113.5T480-320Zm0-160Z'/%3e%3c/svg%3e",rd="/kitakanto_site/assets/kitakantou_icon-5-B9xoF0bd.jpg",ld="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAC+AnADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AL+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9k=",od="/kitakanto_site/assets/lesson_desk-xW0s3zxV.jpg",id="/kitakanto_site/assets/lesson_time-Dgk8zINM.jpg",ud="/kitakanto_site/assets/photo_base-BZY1u94Z.jpg",sd="/kitakanto_site/assets/photo_design-BFnBiiUd.jpg",ad="/kitakanto_site/assets/photo_programming-7EMwzBqk.jpg",cd="/kitakanto_site/assets/school_icon-CejJsTrI.jpg",fd="/kitakanto_site/assets/study-DvNilsdq.jpg",dd="/kitakanto_site/assets/w_pc-5zn75Ufg.jpg",pd=(h,w="jpg")=>new URL(Object.assign({"./assets/images/book.jpg":bf,"./assets/images/corridor.jpg":ed,"./assets/images/icon_dark.svg":td,"./assets/images/icon_light.svg":nd,"./assets/images/kitakantou_icon-5.jpg":rd,"./assets/images/kitakantou_text.jpg":ld,"./assets/images/lesson_desk.jpg":od,"./assets/images/lesson_time.jpg":id,"./assets/images/photo_base.jpg":ud,"./assets/images/photo_design.jpg":sd,"./assets/images/photo_programming.jpg":ad,"./assets/images/school_icon.jpg":cd,"./assets/images/study.jpg":fd,"./assets/images/w_pc.jpg":dd})[`./assets/images/${h}.${w}`],import.meta.url).href;var Fi=new Map,Fl=new WeakMap,$a=0,md=void 0;function hd(h){return h?(Fl.has(h)||($a+=1,Fl.set(h,$a.toString())),Fl.get(h)):"0"}function vd(h){return Object.keys(h).sort().filter(w=>h[w]!==void 0).map(w=>`${w}_${w==="root"?hd(h.root):h[w]}`).toString()}function Ad(h){const w=vd(h);let d=Fi.get(w);if(!d){const N=new Map;let E;const D=new IntersectionObserver(O=>{O.forEach(F=>{var I;const q=F.isIntersecting&&E.some(ne=>F.intersectionRatio>=ne);h.trackVisibility&&typeof F.isVisible>"u"&&(F.isVisible=q),(I=N.get(F.target))==null||I.forEach(ne=>{ne(q,F)})})},h);E=D.thresholds||(Array.isArray(h.threshold)?h.threshold:[h.threshold||0]),d={id:w,observer:D,elements:N},Fi.set(w,d)}return d}function gd(h,w,d={},N=md){if(typeof window.IntersectionObserver>"u"&&N!==void 0){const I=h.getBoundingClientRect();return w(N,{isIntersecting:N,target:h,intersectionRatio:typeof d.threshold=="number"?d.threshold:0,time:0,boundingClientRect:I,intersectionRect:I,rootBounds:I}),()=>{}}const{id:E,observer:D,elements:O}=Ad(d),F=O.get(h)||[];return O.has(h)||O.set(h,F),F.push(w),D.observe(h),function(){F.splice(F.indexOf(w),1),F.length===0&&(O.delete(h),D.unobserve(h)),O.size===0&&(D.disconnect(),Fi.delete(E))}}function yd({threshold:h,delay:w,trackVisibility:d,rootMargin:N,root:E,triggerOnce:D,skip:O,initialInView:F,fallbackInView:I,onChange:q}={}){var ne;const[J,b]=Jt.useState(null),_e=Jt.useRef(q),[Ee,G]=Jt.useState({inView:!!F,entry:void 0});_e.current=q,Jt.useEffect(()=>{if(O||!J)return;let ge;return ge=gd(J,(me,Pe)=>{G({inView:me,entry:Pe}),_e.current&&_e.current(me,Pe),Pe.isIntersecting&&D&&ge&&(ge(),ge=void 0)},{root:E,rootMargin:N,threshold:h,trackVisibility:d,delay:w},I),()=>{ge&&ge()}},[Array.isArray(h)?h.toString():h,J,E,N,D,O,d,I,w]);const Y=(ne=Ee.entry)==null?void 0:ne.target,Ze=Jt.useRef(void 0);!J&&Y&&!D&&!O&&Ze.current!==Y&&(Ze.current=Y,G({inView:!!F,entry:void 0}));const Ae=[b,Ee.inView,Ee.entry];return Ae.ref=Ae[0],Ae.inView=Ae[1],Ae.entry=Ae[2],Ae}function nt({root:h=null,rootMargin:w="0px 0px",threshold:d=.1,triggerOnce:N=!0}){const{ref:E,inView:D}=yd({root:h,rootMargin:w,threshold:d,triggerOnce:N});return{ref:E,inView:D}}function gt({imageName:h,extensionName:w="jpg",classText:d}){const{ref:N,inView:E}=nt({threshold:.2});return c.jsx("img",{ref:N,src:pd(h,w),className:`w-full h-[auto] delay-[250ms] duration-[400ms] ${E?"opacity-[1] scale-1":"opacity-0 scale-[0.8]"} ${d}`})}const Bi=()=>document.body;function xd(){const[h,w]=Jt.useState(!1),d=()=>{const N=Bi();h?N.classList.remove("isDark"):N.classList.add("isDark"),w(!h)};return c.jsx("button",{className:`
                 group
                 block
                 relative
@@ -81,13 +81,13 @@ Error generating stack: `+o.message+`
                 w-[60px]
                 h-[30px]
                 border-[2px]
+                border-[#f9fafa]
                 rounded-[50px]
                 transition-all
                 duration-[0.25s]
                 ease-in-out
-                bg-baseColor
+                bg-mainColor
                 hover:scale-[1.1]
-                ${h?"border-[#d0d1d1]":"border-[#525558]"}
             `,onClick:d,children:c.jsx("span",{className:`
                     grid
                     place-items-center
@@ -95,15 +95,24 @@ Error generating stack: `+o.message+`
                     h-[26px]
                     rounded-[50%]
                     border-[2px]
-                    border-baseColor
+                    border-mainColor
                     transition-all
                     duration-[0.25s]
                     ease-in-out
                     absolute
                     top-[50%]
                     translate-y-[-50%]
-                    ${h?"left-[100%] translate-x-[-100%] bg-[#d0d1d1]":"left-0 bg-[#525558]"}
-                `,children:h?c.jsx(gt,{imageName:"icon_dark",extensionName:"svg",classText:"w-[70%]"}):c.jsx(gt,{imageName:"icon_light",extensionName:"svg",classText:"w-[70%]"})})})}function wd({listsData:h,onListClick:w}){const d=h.map((N,E)=>c.jsx("li",{className:`
+                    overflow-clip
+                    bg-[#f9fafa]
+                    ${h?"left-[100%] translate-x-[-100%] ":"left-0"}
+                `,children:h?c.jsx("div",{className:`
+                            w-[70%]
+                            transition-all
+                            ${h?"animationMoveIconRight":""}
+                        `,children:c.jsx(gt,{imageName:"icon_dark",extensionName:"svg"})}):c.jsx("div",{className:`
+                            w-[70%]
+                            ${h?"":"animationMoveIconLeft"}
+                        `,children:c.jsx(gt,{imageName:"icon_light",extensionName:"svg"})})})})}function wd({listsData:h,onListClick:w}){const d=h.map((N,E)=>c.jsx("li",{className:`
                     grid
                     place-items-center
                     font-[alternate-gothic-condensed-a]
@@ -179,7 +188,7 @@ Error generating stack: `+o.message+`
                         font-[700]
                     `,children:w})})})}function _d(){const h=[{text:"Hello,"},{text:"World!"}];return c.jsx("section",{className:"md:sm:h-[430dvh] h-[100dvh] bg-baseColor overflow-x-clip",children:c.jsx("div",{className:"inner sticky top-0 left-0 grid place-items-center h-[100dvh]",children:c.jsx("h2",{className:"en scroll-animation_scale font-[700] text-titleColor3 text-center",children:h.map((w,d)=>c.jsx("span",{className:`
                                     block
-                                    ${w.text==="Hello,"?"leading-[1em] md:sm:text-[350px] text-[26vw]":"leading-[0.8em] md:sm:text-[300px] text-[22vw]"}`,children:w.text},w.text[d]))})})})}function jt(h){return h==="b-w"?"text-textColor1":h==="w-b"?"text-textColor2":h}function Gt({EnglishText:h,JapaneseText:w,color:d="b-w",marginBottom:N="md:lg:mb-[180px] mb-[100px]",textSize:E="md:lg:text-[135px] md:sm:text-[12vw] text-[22vw]"}){return c.jsxs("h2",{className:`
+                                    ${w.text==="Hello,"?"leading-[1em] md:sm:text-[350px] text-[40vw]":"leading-[0.8em] md:sm:text-[300px] text-[35vw]"}`,children:w.text},w.text[d]))})})})}function jt(h){return h==="b-w"?"text-textColor1":h==="w-b"?"text-textColor2":h}function Gt({EnglishText:h,JapaneseText:w,color:d="b-w",marginBottom:N="md:lg:mb-[180px] mb-[100px]",textSize:E="md:lg:text-[135px] md:sm:text-[12vw] text-[22vw]"}){return c.jsxs("h2",{className:`
                 block
                 w-fit
                 mx-auto
@@ -451,18 +460,20 @@ Error generating stack: `+o.message+`
                         brightness-[0.7]
                         group-hover:scale-[1.2]
                         duration-[250ms]
-                `,children:c.jsx(gt,{imageName:d.image})}),c.jsxs("p",{className:`
+                    `,target:"_blank",rel:"noopener noreferrer",children:c.jsx(gt,{imageName:d.image})}),c.jsxs("p",{className:`
                         absolute
                         top-[50%]
                         left-[50%]
-                        z-[100]
+                        z-[10]
                         translate-x-[-50%]
                         translate-y-[-50%]
                         w-full
                         text-[#e5e7eb]
                         group-hover:text-accentColor
-                        md:sm:text-[40px]
-                        text-[10vw]
+                        md:lg:text-[40px]
+                        md:sm:text-[4vw]
+                        text-[8vw]
+                        pointer-events-none
                     `,children:[d.title,c.jsx("br",{}),"コース"]})]},N));return c.jsx(c.Fragment,{children:w})}function zd(){const h="b-w",w=[{character:"現在受け付けている",accent:!1,break:!1},{character:"コース",accent:!0,break:!1}];return c.jsx("section",{id:"ACCEPTANCE",className:"md:sm:pt-[100vh] pt-[30vw] md:sm:mb-0 mb-[30vw]",children:c.jsxs("div",{className:"inner",children:[c.jsx("h2",{children:c.jsx(Gt,{EnglishText:"ACCEPTANCE",JapaneseText:"受付情報",color:h})}),c.jsx("div",{className:"grid place-items-center w-full md:sm:mb-[150px] mb-[50px] md:sm:text-left text-center",children:c.jsx(Tt,{text:w,baseColor:h})}),c.jsx("div",{className:`
                     flex
                     justify-between
@@ -513,6 +524,7 @@ Error generating stack: `+o.message+`
                                 w-full
                                 max-w-[500px]
                                 md:sm:h-[max(500px,45vw)]
+                                max-h-[500px]
                                 h-[25vh]
                             `}),c.jsxs("div",{className:"",children:[c.jsx("h3",{className:`
                             block
@@ -528,6 +540,7 @@ Error generating stack: `+o.message+`
                 justify-center
                 md:sm:pb-[0]
                 py-[25vw]
+                md:sm:py-0
                 md:sm:w-[50%]
                 w-full
                 md:sm:h-[min(50vw,650px)]
@@ -545,7 +558,7 @@ Error generating stack: `+o.message+`
                     text-center
                     leading-[1em]
                     text-[12vw]
-                    md:lg:text-[68px]
+                    md:sm:text-[68px]
                     ${jt(h)}
                 `,children:"011−232−5508"})]})}function Dd(){const h="b-w",w=[{character:"月10万円給付",break:!0},{character:"求職者支援制度に関して",break:!0},{character:"の詳しい情報は",break:!0},{character:"厚生労働省 公式サイトを",break:!0},{character:"ご覧ください。",break:!1}];return c.jsxs("section",{id:"BENEFIT",className:`
                 relative
@@ -555,6 +568,7 @@ Error generating stack: `+o.message+`
                 align-center
                 md:sm:pb-[0]
                 py-[25vw]
+                md:sm:py-0
                 md:sm:w-[50%]
                 w-full
                 md:sm:h-[min(50vw,650px)]
